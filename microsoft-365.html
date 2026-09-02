@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ex-coders">
+    <meta name="description" content="Microsoft 365 solutions from Badee: licensing, tenant setup, migration, identity, Intune, security and ongoing administration.">
+    <!-- ======== Page title ============ -->
+    <title>Microsoft 365 Solutions - Badee IT Solutions</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+         <div class="spinner">
+         </div>
+         <div class="txt-loading">
+            <span data-text-preloader="B" class="letters-loading">
+               B
+            </span>
+            <span data-text-preloader="A" class="letters-loading">
+               A
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+               D
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+         </div>
+         <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+         <div class="row">
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Riyadh, Saudi Arabia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:sales@badee.com.sa"><span
+                                            class="mailto:sales@badee.com.sa">sales@badee.com.sa</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+966553910099">0553910099</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/badee-sa"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header>
+        <div id="header-sticky" class="header-3">
+            <div class="plane-shape">
+                <img src="assets/img/plane.png" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img style="max-width: 70px;" src="assets/img/logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li><a href="solutions.html">Solutions</a></li>
+                                            <li class="has-dropdown">
+                                                <a href="news.html">
+                                                    Pages
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li class="has-dropdown">
+                                                        <a href="project.html">
+                                                            Projects
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="project.html">Project</a></li>
+                                                            <li><a href="project-carousel.html">Project Carousel</a>
+                                                            </li>
+                                                            <li><a href="project-details.html">Project Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="team.html">
+                                                            Team
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="team.html">Our Team</a></li>
+                                                            <li><a href="team-carousel.html">Team Carousel</a></li>
+                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="faq.html">Faq's</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn bg-white">
+                                    <span>
+                                        get A Quote
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-lg-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Hero Section Start >>-->
+    <section class="alna-hero fix">
+        <div class="alna-container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="alna-label wow fadeInUp" data-wow-delay=".1s">MICROSOFT 365 SOLUTIONS</span>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Empower Your Business with Microsoft 365</h1>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".3s">Badee Solutions helps organizations design, deploy and manage Microsoft 365 environments that fit their users, business requirements and security needs&mdash;from licensing and tenant setup to migration, configuration, security and ongoing administration.</p>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".4s">Microsoft 365 brings together the tools businesses need to communicate, collaborate, secure information and work productively from virtually anywhere.</p>
+                </div>
+                <div class="hero-form">
+                    <div class="alna-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                        <img class="doodle" src="assets/img/icon/arrowDoodle.svg" alt="">
+                        <div class="alna-form-card">
+                            <h4>Interested?</h4>
+                            <p>Fill in this form to let us get back to you ASAP!</p>
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="Full Name">
+                                <input type="email" name="email" placeholder="Business Email">
+                                <div class="phone-field">
+                                    <span class="flag"><img src="assets/img/flag.png" alt=""><i class="fas fa-caret-down"></i></span>
+                                    <input type="text" name="phone" placeholder="Mobile Number">
+                                </div>
+                                <input type="text" name="company" placeholder="Company Name">
+                                <input type="text" name="message" placeholder="More details about your requirements">
+                                <button type="submit">Talk to a Microsoft 365 Expert</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section first fix" id="m365-included">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">WHAT'S INCLUDED</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Microsoft 365 Across Your Business</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Microsoft 365 is more than email and Office applications. It brings together productivity, collaboration, identity, security, device management and cloud services within a connected Microsoft ecosystem.</p>
+            </div>
+            <div class="alna-grid cols-2">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365 Business</h4>
+                    <p>Business plans designed for organizations that need secure productivity and collaboration tools. Examples include Business Basic, Business Standard, Business Premium and Apps for business.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365 &amp; Office 365 Enterprise</h4>
+                    <p>Enterprise plans designed for organizations with broader productivity, security, compliance and management requirements. Examples include Microsoft 365 E3 and E5, Office 365 E1, E3 and E5, and Microsoft 365 F3 for frontline scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="m365-tech">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">MICROSOFT 365 TECHNOLOGIES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">More Than Email and Office</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A Microsoft 365 environment can span productivity, collaboration, identity, devices, security, data and AI rather than simply email and Office applications.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Exchange Online</h4>
+                    <p>Business email and calendaring delivered through Microsoft's cloud platform.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Teams</h4>
+                    <p>Communication and collaboration through chat, meetings, calling and teamwork.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>SharePoint</h4>
+                    <p>Secure collaboration, document management and business content management.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>OneDrive</h4>
+                    <p>Cloud file storage and sharing designed for individual work and collaboration.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Entra ID</h4>
+                    <p>Identity and access management that helps control who can access business resources.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Intune</h4>
+                    <p>Cloud-based endpoint and device management to help manage users, devices and applications.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Defender</h4>
+                    <p>Security capabilities that help protect identities, endpoints, email and Microsoft 365 environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Purview</h4>
+                    <p>Data security, governance, compliance and information protection capabilities across the Microsoft ecosystem.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Copilot</h4>
+                    <p>AI-powered capabilities designed to help users work more efficiently across Microsoft applications and services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="m365-services">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">PROFESSIONAL SERVICES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">We Don't Just Provide Microsoft 365. We Make It Work.</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">The right Microsoft 365 environment requires more than selecting licenses. Badee can help with planning, implementation, migration, configuration, security and ongoing management.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Migration scenarios can include Exchange or legacy email to Microsoft 365, Google Workspace to Microsoft 365, IMAP to Exchange Online, and file servers to SharePoint or OneDrive.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365 Assessment &amp; Planning</h4>
+                    <p>Review your current environment, business requirements, users and technology needs to define the right Microsoft 365 approach.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Tenant Setup &amp; Configuration</h4>
+                    <p>Set up and configure your Microsoft 365 tenant, users, domains, policies, services and administrative environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365 Migration</h4>
+                    <p>Plan and execute migrations from existing email, file-sharing and collaboration platforms into Microsoft 365 with a structured approach designed to minimize disruption.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Identity &amp; Access Management</h4>
+                    <p>Configure Microsoft Entra ID, user identities, authentication, access policies and related identity controls.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Intune &amp; Endpoint Management</h4>
+                    <p>Manage devices, applications, configurations and security policies through Microsoft Intune.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Security &amp; Compliance Configuration</h4>
+                    <p>Configure relevant Microsoft security and compliance capabilities based on your organization's requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365 Administration</h4>
+                    <p>Ongoing administration of users, licenses, services, policies and Microsoft 365 environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365 Managed Services</h4>
+                    <p>Continuous support and management for organizations that want Badee to help operate and maintain their Microsoft 365 environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="m365-sizes">
+        <div class="alna-container">
+            <div class="alna-row">
+                <div class="alna-col wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">BUILT FOR YOUR BUSINESS</span>
+                    <h3>Microsoft 365 for Every Stage of Business</h3>
+                    <div class="alna-item">
+                        <h4>Small &amp; Medium Businesses</h4>
+                        <p>Build a professional, secure and productive workplace without unnecessary infrastructure complexity.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Growing Businesses</h4>
+                        <p>Standardize collaboration, identity, devices and security as your users and operations expand.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Enterprise Organizations</h4>
+                        <p>Support complex environments with enterprise productivity, identity, security, compliance and management capabilities.</p>
+                    </div>
+                </div>
+                <div class="alna-col alna-img wow fadeInUp" data-wow-delay=".4s">
+                    <img src="assets/img/about2.png" alt="Badee team collaborating in the office">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="m365-benefits">
+        <div class="alna-container">
+            <div class="alna-split">
+                <div class="alna-split-left wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">BENEFITS</span>
+                    <h2 class="alna-h2">Business Benefits of Microsoft 365</h2>
+                </div>
+                <div class="alna-split-right">
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Work Anywhere</h4>
+                        <p>Give employees secure access to the tools and information they need across locations and devices.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Collaborate Better</h4>
+                        <p>Connect teams through Microsoft Teams, SharePoint, OneDrive and other collaboration tools.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Strengthen Security</h4>
+                        <p>Use Microsoft's identity, endpoint, email, data and security capabilities to strengthen your overall environment.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Reduce Infrastructure Complexity</h4>
+                        <p>Move key productivity services to the cloud and reduce reliance on traditional on-premises infrastructure.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Scale With Your Business</h4>
+                        <p>Add users, services and capabilities as your business requirements evolve.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Enable AI</h4>
+                        <p>Introduce Microsoft Copilot and other AI capabilities where they can create meaningful value for your teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="m365-why">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">WHY BADEE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Microsoft 365 With a Partner That Understands Your Environment</h2>
+            </div>
+            <div class="alna-grid cols-2 numbered">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Beyond Licensing</h4>
+                    <p>We look beyond the license and consider how Microsoft 365 fits into your users, infrastructure, security and business processes.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>End-to-End Implementation</h4>
+                    <p>From tenant setup and migration to configuration and deployment, we can support the complete implementation journey.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Security-Minded Approach</h4>
+                    <p>Identity, endpoint, data and access controls are considered as part of the Microsoft 365 environment&mdash;not as an afterthought.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Ongoing Support</h4>
+                    <p>After deployment, Badee can continue supporting and managing your Microsoft 365 environment according to your requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section tight fix" id="m365-managed">
+        <div class="alna-container">
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".2s">
+                <div class="txt">
+                    <span class="alna-label with-rule">NEED MORE THAN LICENSING?</span>
+                    <h3>Let Badee Manage Your Microsoft 365 Environment</h3>
+                    <p>If your organization does not want to manage Microsoft 365 internally, Badee can provide ongoing administration and support as part of a managed IT service engagement.</p>
+                </div>
+                <a href="managed-it-services.html" class="alna-view-all">Explore Managed IT Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="m365-faq">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">MICROSOFT 365 FAQ</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+            </div>
+            <div class="alna-faq">
+                <div class="accordion" id="accm365">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#m365faq1" aria-expanded="false" aria-controls="m365faq1">
+                                Does Badee provide Microsoft 365 licenses?
+                            </button>
+                        </h5>
+                        <div id="m365faq1" class="accordion-collapse collapse" data-bs-parent="#accm365">
+                            <div class="accordion-body">
+                                Yes. Badee can provide Microsoft 365 licensing based on your organization's users, requirements and selected Microsoft plan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#m365faq2" aria-expanded="false" aria-controls="m365faq2">
+                                Can Badee migrate our existing email to Microsoft 365?
+                            </button>
+                        </h5>
+                        <div id="m365faq2" class="accordion-collapse collapse" data-bs-parent="#accm365">
+                            <div class="accordion-body">
+                                Yes. We can plan and perform email migration from supported legacy and cloud platforms to Microsoft 365, with the migration approach determined by the existing environment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#m365faq3" aria-expanded="false" aria-controls="m365faq3">
+                                Can you configure our Microsoft 365 tenant?
+                            </button>
+                        </h5>
+                        <div id="m365faq3" class="accordion-collapse collapse" data-bs-parent="#accm365">
+                            <div class="accordion-body">
+                                Yes. Tenant setup and configuration can include users, domains, Exchange Online, Teams, SharePoint, OneDrive, identity, security policies and other required services.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#m365faq4" aria-expanded="false" aria-controls="m365faq4">
+                                Can you manage Microsoft 365 after implementation?
+                            </button>
+                        </h5>
+                        <div id="m365faq4" class="accordion-collapse collapse" data-bs-parent="#accm365">
+                            <div class="accordion-body">
+                                Yes. Microsoft 365 administration and ongoing support can be provided as a professional service or as part of a managed IT services engagement.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#m365faq5" aria-expanded="false" aria-controls="m365faq5">
+                                Do you support Microsoft Intune and Entra ID?
+                            </button>
+                        </h5>
+                        <div id="m365faq5" class="accordion-collapse collapse" data-bs-parent="#accm365">
+                            <div class="accordion-body">
+                                Yes. Microsoft Intune and Microsoft Entra ID can be included where device management and identity/access requirements call for them.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#m365faq6" aria-expanded="false" aria-controls="m365faq6">
+                                Do you provide Microsoft 365 Copilot?
+                            </button>
+                        </h5>
+                        <div id="m365faq6" class="accordion-collapse collapse" data-bs-parent="#accm365">
+                            <div class="accordion-body">
+                                We can support the evaluation, licensing and implementation of Microsoft Copilot capabilities where applicable to your Microsoft 365 environment.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="m365-resources">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">MICROSOFT RESOURCES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Explore Microsoft 365</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Learn more about Microsoft 365 plans, capabilities and enterprise options directly from Microsoft.</p>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay=".3s">
+                <div class="alna-taggroup">
+                    <div class="alna-tags">
+                        <span>Microsoft 365 for Business</span>
+                        <span>Microsoft 365 Enterprise Plans</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Final CTA >>-->
+    <section class="alna-cta-section" id="m365-cta">
+        <div class="alna-container">
+            <div class="alna-cta wow fadeInUp" data-wow-delay=".2s">
+                <div class="cta-text">
+                    <span class="cta-eyebrow">READY FOR MICROSOFT 365?</span>
+                    <h2>Let's Build Your Microsoft 365 Environment</h2>
+                    <p>Whether you need licensing, migration, implementation, security, administration or ongoing support, Badee can help you get more from Microsoft 365.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn">Talk to a Microsoft 365 Expert</a>
+                    <a href="contact.html" class="btn ghost">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Footer Section Start >>-->
+    <footer class="footer-area">
+      <div class="widget-area style1  pt-100 pb-80">
+         <div class="container">
+            <div class="footer-layout style1">
+               <div class="row">
+                  <div class="col-xl-4 col-md-6 col-12">
+                     <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
+                        <div class="gt-widget-about">
+                           <div class="about-logo">
+                              <a href="index.html"><img src="assets/img/footer-logo.svg" alt="Badee IT Solutions"></a>
+                           </div>
+                           <p style="max-width: 250px; " class="about-text">Technology solutions and services that help businesses build,
+                              secure and manage their IT environment.
+                           </p>
+                           <p class="about-text fw-semibold">Just Badee It.</p>
+                           <div class="gt-social style2">
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                              <a href="https://www.instagram.com/Badee_ksa"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
+                        <h3 class="widget_title">Solutions</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="microsoft-365.html"><i class="fa-solid fa-chevrons-right"></i>Microsoft
+                                    365</a></li>
+                              <li><a href="cloud-solutions.html"><i class="fa-solid fa-chevrons-right"></i>Cloud
+                                    Solutions</a></li>
+                              <li><a href="backup-disaster-recovery.html"><i class="fa-solid fa-chevrons-right"></i>Backup
+                                    &amp; Disaster Recovery</a></li>
+                              <li><a href="it-infrastructure.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Infrastructure</a></li>
+                              <li><a href="next-gen-firewalls.html"><i class="fa-solid fa-chevrons-right"></i>Next-Gen
+                                    Firewalls</a></li>
+                              <li><a href="smart-meeting-rooms.html"><i class="fa-solid fa-chevrons-right"></i>Smart
+                                    Meeting Rooms</a></li>
+                              <li><a href="cctv-security.html"><i class="fa-solid fa-chevrons-right"></i>CCTV
+                                    Security</a></li>
+                              <li><a href="solutions.html"><i class="fa-solid fa-chevrons-right"></i>Business
+                                    Applications</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.3s">
+                        <h3 class="widget_title">Services</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="managed-it-services.html"><i class="fa-solid fa-chevrons-right"></i>Managed IT
+                                    Services</a></li>
+                              <li><a href="cybersecurity-services.html"><i class="fa-solid fa-chevrons-right"></i>Cybersecurity
+                                    Services</a></li>
+                              <li><a href="design-development.html"><i class="fa-solid fa-chevrons-right"></i>Design
+                                    &amp; Development</a></li>
+                              <li><a href="service-details.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Procurement</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
+                        <h3 class="widget_title">Company</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i>About Badee</a></li>
+                              <li><a href="index.html#industries"><i class="fa-solid fa-chevrons-right"></i>Industries</a>
+                              </li>
+                              <li><a href="index.html#projects"><i class="fa-solid fa-chevrons-right"></i>Projects</a>
+                              </li>
+                              <li><a href="index.html#technology-partners"><i
+                                       class="fa-solid fa-chevrons-right"></i>Partners</a></li>
+                              <li><a href="news.html"><i class="fa-solid fa-chevrons-right"></i>Case Studies</a></li>
+                              <li><a href="contact.html"><i
+                                       class="fa-solid fa-chevrons-right"></i>Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.9s">
+                        <h3 class="widget_title">Contact</h3>
+                        <ul class="footer-contact-list">
+                           <li><a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i> <span>Riyadh, Saudi Arabia</span></a></li>
+                           <li><a href="mailto:sales@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>sales@badee.com.sa</span></a></li>
+                           <li><a href="mailto:helpdesk@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>helpdesk@badee.com.sa</span></a></li>
+                           <li><a href="tel:+966553910099"><i class="fa-solid fa-phone"></i>
+                                 <span>0553910099</span></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright-wrap bg-theme">
+         <div class="container">
+            <div class="copyright-layout">
+               <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
+                  <p class="copyright">
+                     <i class="fal fa-copyright"></i> All Copyright <span class="copyright-year">2026</span> by <a href="index.html">Badee</a>
+                  </p>
+               </div>
+               <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                  <div class="link-wrapper">
+                     <a href="contact.html">Terms &amp; Condition </a>
+                     <a href="contact.html">Privacy Policy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

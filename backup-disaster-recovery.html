@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ex-coders">
+    <meta name="description" content="Backup and disaster recovery from Badee: protection coverage, recovery objectives, DR design, testing and managed backup services.">
+    <!-- ======== Page title ============ -->
+    <title>Backup & Disaster Recovery - Badee IT Solutions</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+         <div class="spinner">
+         </div>
+         <div class="txt-loading">
+            <span data-text-preloader="B" class="letters-loading">
+               B
+            </span>
+            <span data-text-preloader="A" class="letters-loading">
+               A
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+               D
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+         </div>
+         <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+         <div class="row">
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Riyadh, Saudi Arabia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:sales@badee.com.sa"><span
+                                            class="mailto:sales@badee.com.sa">sales@badee.com.sa</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+966553910099">0553910099</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/badee-sa"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header>
+        <div id="header-sticky" class="header-3">
+            <div class="plane-shape">
+                <img src="assets/img/plane.png" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img style="max-width: 70px;" src="assets/img/logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li><a href="solutions.html">Solutions</a></li>
+                                            <li class="has-dropdown">
+                                                <a href="news.html">
+                                                    Pages
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li class="has-dropdown">
+                                                        <a href="project.html">
+                                                            Projects
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="project.html">Project</a></li>
+                                                            <li><a href="project-carousel.html">Project Carousel</a>
+                                                            </li>
+                                                            <li><a href="project-details.html">Project Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="team.html">
+                                                            Team
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="team.html">Our Team</a></li>
+                                                            <li><a href="team-carousel.html">Team Carousel</a></li>
+                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="faq.html">Faq's</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn bg-white">
+                                    <span>
+                                        get A Quote
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-lg-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Hero Section Start >>-->
+    <section class="alna-hero fix">
+        <div class="alna-container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="alna-label wow fadeInUp" data-wow-delay=".1s">BACKUP &amp; DISASTER RECOVERY</span>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Protect Your Data. Recover With Confidence.</h1>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".3s">Business data and IT systems are critical to daily operations. A reliable backup and disaster recovery strategy helps protect your business from data loss, system failures, cyber incidents and unexpected disruptions.</p>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".4s">Badee Solutions helps businesses design, implement and manage backup and disaster recovery environments that protect critical workloads and provide a clear path to recovery when it matters most.</p>
+                </div>
+                <div class="hero-form">
+                    <div class="alna-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                        <img class="doodle" src="assets/img/icon/arrowDoodle.svg" alt="">
+                        <div class="alna-form-card">
+                            <h4>Interested?</h4>
+                            <p>Fill in this form to let us get back to you ASAP!</p>
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="Full Name">
+                                <input type="email" name="email" placeholder="Business Email">
+                                <div class="phone-field">
+                                    <span class="flag"><img src="assets/img/flag.png" alt=""><i class="fas fa-caret-down"></i></span>
+                                    <input type="text" name="phone" placeholder="Mobile Number">
+                                </div>
+                                <input type="text" name="company" placeholder="Company Name">
+                                <input type="text" name="message" placeholder="More details about your requirements">
+                                <button type="submit">Talk to a Backup &amp; DR Expert</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section first fix" id="bdr-understanding">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">UNDERSTANDING BACKUP &amp; DR</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Backup Is Not the Same as Disaster Recovery</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A strong resilience strategy considers all three&mdash;not just where your backup is stored.</p>
+            </div>
+            <div class="alna-pillars wow fadeInUp" data-wow-delay=".3s">
+                <div class="pillar">
+                    <h4>Backup</h4>
+                    <p>Backup creates protected copies of your data and systems so they can be restored when needed.</p>
+                </div>
+                <div class="pillar">
+                    <h4>Disaster Recovery</h4>
+                    <p>Disaster recovery focuses on how your systems, applications and services will be restored and made available after a major disruption.</p>
+                </div>
+                <div class="pillar">
+                    <h4>Business Continuity</h4>
+                    <p>Business continuity considers how your organization continues operating while systems are unavailable or being recovered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="bdr-coverage">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">PROTECTION COVERAGE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Protect What Your Business Depends On</h2>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Servers &amp; Virtual Machines</h4>
+                    <p>Protect physical and virtual workloads with reliable backup and recovery capabilities.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft 365</h4>
+                    <p>Protect Microsoft 365 data including Exchange Online, SharePoint, OneDrive and other supported workloads.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Business Applications</h4>
+                    <p>Protect critical applications and the data they depend on.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Databases</h4>
+                    <p>Protect business-critical databases with recovery strategies aligned to application requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Files &amp; Documents</h4>
+                    <p>Protect important business files and shared data from accidental deletion, corruption or other loss scenarios.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Workloads</h4>
+                    <p>Extend backup and recovery strategies to supported cloud workloads and environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="bdr-backup">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BACKUP SOLUTIONS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Reliable Backup for Critical Business Data</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A backup strategy should provide more than a copy of your data. It should define what is protected, where backups are stored, how often they are created and how quickly they can be restored.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Local Backup</h4>
+                    <p>Maintain backup copies within your local environment for fast access and recovery where appropriate.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Offsite Backup</h4>
+                    <p>Maintain protected copies outside the primary environment to reduce the impact of site-level incidents.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Backup</h4>
+                    <p>Use cloud-based storage and backup services to provide additional protection and scalable retention options.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Immutable Backup</h4>
+                    <p>Use technologies and architectures designed to help protect backup copies from unauthorized modification or deletion.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Automated Backup</h4>
+                    <p>Schedule and automate backup operations to reduce manual intervention and improve consistency.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Backup Monitoring</h4>
+                    <p>Monitor backup jobs and failures so issues can be identified before a recovery is required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="bdr-dr">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">DISASTER RECOVERY</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">When Something Goes Wrong, Know What Happens Next.</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A disaster recovery strategy defines how critical systems will be restored after an incident and establishes the priorities, processes and technologies required to recover operations.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recovery Planning</h4>
+                    <p>Identify critical systems, dependencies, recovery priorities and recovery requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recovery Objectives</h4>
+                    <p>Define appropriate Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO) based on business requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Disaster Recovery Infrastructure</h4>
+                    <p>Design recovery environments using appropriate on-premises, cloud or hybrid technologies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Failover &amp; Recovery</h4>
+                    <p>Establish procedures for restoring or failing over critical workloads when the primary environment is unavailable.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Disaster Recovery Testing</h4>
+                    <p>Test recovery procedures to validate that systems, data and processes can be recovered as expected.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recovery Documentation</h4>
+                    <p>Document recovery procedures, responsibilities and escalation paths so your team knows what to do during an incident.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="bdr-services">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">PROFESSIONAL SERVICES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">We Don't Just Install Backup. We Build a Recovery Strategy.</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">The right backup and disaster recovery solution depends on your infrastructure, applications, data, business requirements and acceptable level of downtime. Badee can support the complete lifecycle from assessment and design to implementation, testing and ongoing management.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Backup &amp; DR Assessment</h4>
+                    <p>Review your existing backup, infrastructure, workloads, recovery processes and business requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Backup Strategy &amp; Design</h4>
+                    <p>Define what should be protected, backup frequency, retention, storage locations and recovery requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Backup Implementation</h4>
+                    <p>Deploy and configure backup infrastructure, policies, schedules, storage and protection jobs.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Disaster Recovery Design</h4>
+                    <p>Design recovery strategies for critical workloads based on business priorities and recovery objectives.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Migration &amp; Configuration</h4>
+                    <p>Configure or migrate existing backup environments to a new architecture or protection platform where required.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recovery Testing</h4>
+                    <p>Perform planned recovery tests to validate backup integrity and recovery procedures.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Monitoring &amp; Management</h4>
+                    <p>Monitor backup operations, identify failures and provide ongoing administration and support.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recovery Assistance</h4>
+                    <p>Support recovery activities when systems or data need to be restored following an incident.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="bdr-rpo-rto">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">RECOVERY OBJECTIVES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">How Fast Do You Need to Recover?</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Badee can help define recovery objectives based on the business impact of downtime and data loss.</p>
+            </div>
+            <div class="alna-compare">
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <h4>RPO &mdash; Recovery Point Objective</h4>
+                    <p>How much data can your business afford to lose? An RPO of one hour means the recovery strategy is designed around potentially losing no more than approximately one hour of data, subject to the actual technology and configuration.</p>
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <h4>RTO &mdash; Recovery Time Objective</h4>
+                    <p>How quickly does a critical system need to be restored? The required RTO helps determine the appropriate recovery architecture, technology and investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="bdr-321">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BACKUP BEST PRACTICES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Build Backup Resilience Into Your Environment</h2>
+            </div>
+            <div class="alna-bignum">
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <div class="n">3</div>
+                    <h4>Copies</h4>
+                    <p>Maintain multiple copies of important data rather than relying on a single backup.</p>
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <div class="n">2</div>
+                    <h4>Different Media</h4>
+                    <p>Use different storage or media types to reduce dependency on one technology or location.</p>
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <div class="n">1</div>
+                    <h4>Offsite Copy</h4>
+                    <p>Keep at least one protected copy away from the primary environment.</p>
+                </div>
+            </div>
+            <p class="wow fadeInUp" data-wow-delay=".3s" style="font-size:15px;line-height:26px;color:var(--text-color);max-width:900px;margin:28px auto 0;text-align:center;">Depending on the risk profile, organizations may also require immutable, isolated or air-gapped protection and other security controls.</p>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="bdr-needs">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BUILT FOR YOUR BUSINESS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Resilience That Fits Your Business</h2>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Small &amp; Medium Businesses</h4>
+                    <p>Protect essential systems and data with a practical backup and recovery strategy without unnecessary complexity.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Growing Businesses</h4>
+                    <p>Expand protection as your users, applications, locations and infrastructure grow.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Enterprise</h4>
+                    <p>Build structured protection and recovery strategies across complex infrastructure, applications, cloud environments and critical business systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="bdr-benefits">
+        <div class="alna-container">
+            <div class="alna-split">
+                <div class="alna-split-left wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">BUSINESS BENEFITS</span>
+                    <h2 class="alna-h2">Be Ready When the Unexpected Happens</h2>
+                </div>
+                <div class="alna-split-right">
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Minimize Data Loss</h4>
+                        <p>Protect critical information against accidental deletion, corruption, system failure and other incidents.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Reduce Downtime</h4>
+                        <p>Establish recovery strategies designed around the business's required recovery objectives.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Improve Resilience</h4>
+                        <p>Reduce dependency on a single system, location or backup copy.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Strengthen Cyber Resilience</h4>
+                        <p>Combine backup protection with security controls and recovery planning to improve resilience against cyber incidents.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Improve Recovery Readiness</h4>
+                        <p>Know what is protected, where it is stored and how it can be recovered.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Support Business Continuity</h4>
+                        <p>Help the organization continue operating through disruptions and recover critical services systematically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="bdr-why">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">WHY BADEE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Backup Is Only Valuable If You Can Recover</h2>
+            </div>
+            <div class="alna-grid cols-2 numbered">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Business-Focused Design</h4>
+                    <p>We consider the business impact of downtime and data loss when designing protection and recovery strategies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Infrastructure Understanding</h4>
+                    <p>Our backup capabilities work alongside our broader infrastructure, cloud, Microsoft and security expertise.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Recovery, Not Just Backup</h4>
+                    <p>We focus on recovery requirements&mdash;not simply creating backup jobs.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Ongoing Visibility</h4>
+                    <p>Monitoring and management can help identify protection issues before they become recovery problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section tight fix" id="bdr-managed">
+        <div class="alna-container">
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".2s">
+                <div class="txt">
+                    <span class="alna-label with-rule">NEED ONGOING PROTECTION?</span>
+                    <h3>Let Badee Manage Your Backup Environment</h3>
+                    <p>Backup environments require continuous monitoring, administration, testing and maintenance. Badee can provide ongoing managed backup and disaster recovery services based on your business requirements and selected technology.</p>
+                </div>
+                <a href="managed-it-services.html" class="alna-view-all">Explore Managed IT Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="bdr-tech">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BACKUP TECHNOLOGIES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Technology Selected Around Your Requirements</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">We work with established backup and recovery technologies and select the appropriate architecture based on workload, recovery objectives, environment and business requirements.</p>
+            </div>
+            <div class="alna-grid cols-2">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Acronis</h4>
+                    <p>Backup, cyber protection and recovery capabilities across supported workloads.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Veeam</h4>
+                    <p>Backup and recovery solutions for supported virtual, physical, cloud and application environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft</h4>
+                    <p>Microsoft-native and Microsoft-compatible backup and recovery capabilities where appropriate.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Platforms</h4>
+                    <p>Cloud infrastructure can be incorporated into backup and disaster recovery architectures where appropriate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="bdr-faq">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BACKUP &amp; DR FAQ</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+            </div>
+            <div class="alna-faq">
+                <div class="accordion" id="accbdr">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq1" aria-expanded="false" aria-controls="bdrfaq1">
+                                Is backup enough to protect our business?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq1" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                Backup is an important part of business resilience, but a complete strategy should also consider recovery objectives, disaster recovery procedures, testing and business continuity requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq2" aria-expanded="false" aria-controls="bdrfaq2">
+                                How often should we back up our data?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq2" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                It depends on how much data the business can afford to lose and how frequently data changes. The appropriate backup frequency should be defined around the required RPO.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq3" aria-expanded="false" aria-controls="bdrfaq3">
+                                What is the difference between RPO and RTO?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq3" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                RPO defines how much data loss is acceptable, while RTO defines how quickly a system or service needs to be restored.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq4" aria-expanded="false" aria-controls="bdrfaq4">
+                                Can you protect Microsoft 365 data?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq4" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                Yes. Microsoft 365 workloads can be included in a backup strategy using appropriate supported technologies and configurations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq5" aria-expanded="false" aria-controls="bdrfaq5">
+                                Can you provide cloud-based backup?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq5" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                Yes. Cloud storage and cloud-based backup architectures can be incorporated depending on the workload, retention, security and recovery requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq6" aria-expanded="false" aria-controls="bdrfaq6">
+                                Do you test backups?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq6" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                Recovery testing can be included as part of a backup and disaster recovery service to validate that protected data and systems can be recovered as expected.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bdrfaq7" aria-expanded="false" aria-controls="bdrfaq7">
+                                Can Badee manage our backups for us?
+                            </button>
+                        </h5>
+                        <div id="bdrfaq7" class="accordion-collapse collapse" data-bs-parent="#accbdr">
+                            <div class="accordion-body">
+                                Yes. Ongoing monitoring, administration, maintenance and recovery support can be provided as a managed service.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Final CTA >>-->
+    <section class="alna-cta-section" id="bdr-cta">
+        <div class="alna-container">
+            <div class="alna-cta wow fadeInUp" data-wow-delay=".2s">
+                <div class="cta-text">
+                    <span class="cta-eyebrow">PROTECT YOUR BUSINESS</span>
+                    <h2>Don't Wait for a Failure to Discover Your Backup Doesn't Work.</h2>
+                    <p>Let Badee assess your current backup and recovery environment and help you build a practical strategy for protecting your critical systems and data.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn">Talk to a Backup &amp; DR Expert</a>
+                    <a href="contact.html" class="btn ghost">Request an Assessment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Footer Section Start >>-->
+    <footer class="footer-area">
+      <div class="widget-area style1  pt-100 pb-80">
+         <div class="container">
+            <div class="footer-layout style1">
+               <div class="row">
+                  <div class="col-xl-4 col-md-6 col-12">
+                     <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
+                        <div class="gt-widget-about">
+                           <div class="about-logo">
+                              <a href="index.html"><img src="assets/img/footer-logo.svg" alt="Badee IT Solutions"></a>
+                           </div>
+                           <p style="max-width: 250px; " class="about-text">Technology solutions and services that help businesses build,
+                              secure and manage their IT environment.
+                           </p>
+                           <p class="about-text fw-semibold">Just Badee It.</p>
+                           <div class="gt-social style2">
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                              <a href="https://www.instagram.com/Badee_ksa"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
+                        <h3 class="widget_title">Solutions</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="microsoft-365.html"><i class="fa-solid fa-chevrons-right"></i>Microsoft
+                                    365</a></li>
+                              <li><a href="cloud-solutions.html"><i class="fa-solid fa-chevrons-right"></i>Cloud
+                                    Solutions</a></li>
+                              <li><a href="backup-disaster-recovery.html"><i class="fa-solid fa-chevrons-right"></i>Backup
+                                    &amp; Disaster Recovery</a></li>
+                              <li><a href="it-infrastructure.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Infrastructure</a></li>
+                              <li><a href="next-gen-firewalls.html"><i class="fa-solid fa-chevrons-right"></i>Next-Gen
+                                    Firewalls</a></li>
+                              <li><a href="smart-meeting-rooms.html"><i class="fa-solid fa-chevrons-right"></i>Smart
+                                    Meeting Rooms</a></li>
+                              <li><a href="cctv-security.html"><i class="fa-solid fa-chevrons-right"></i>CCTV
+                                    Security</a></li>
+                              <li><a href="solutions.html"><i class="fa-solid fa-chevrons-right"></i>Business
+                                    Applications</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.3s">
+                        <h3 class="widget_title">Services</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="managed-it-services.html"><i class="fa-solid fa-chevrons-right"></i>Managed IT
+                                    Services</a></li>
+                              <li><a href="cybersecurity-services.html"><i class="fa-solid fa-chevrons-right"></i>Cybersecurity
+                                    Services</a></li>
+                              <li><a href="design-development.html"><i class="fa-solid fa-chevrons-right"></i>Design
+                                    &amp; Development</a></li>
+                              <li><a href="service-details.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Procurement</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
+                        <h3 class="widget_title">Company</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i>About Badee</a></li>
+                              <li><a href="index.html#industries"><i class="fa-solid fa-chevrons-right"></i>Industries</a>
+                              </li>
+                              <li><a href="index.html#projects"><i class="fa-solid fa-chevrons-right"></i>Projects</a>
+                              </li>
+                              <li><a href="index.html#technology-partners"><i
+                                       class="fa-solid fa-chevrons-right"></i>Partners</a></li>
+                              <li><a href="news.html"><i class="fa-solid fa-chevrons-right"></i>Case Studies</a></li>
+                              <li><a href="contact.html"><i
+                                       class="fa-solid fa-chevrons-right"></i>Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.9s">
+                        <h3 class="widget_title">Contact</h3>
+                        <ul class="footer-contact-list">
+                           <li><a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i> <span>Riyadh, Saudi Arabia</span></a></li>
+                           <li><a href="mailto:sales@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>sales@badee.com.sa</span></a></li>
+                           <li><a href="mailto:helpdesk@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>helpdesk@badee.com.sa</span></a></li>
+                           <li><a href="tel:+966553910099"><i class="fa-solid fa-phone"></i>
+                                 <span>0553910099</span></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright-wrap bg-theme">
+         <div class="container">
+            <div class="copyright-layout">
+               <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
+                  <p class="copyright">
+                     <i class="fal fa-copyright"></i> All Copyright <span class="copyright-year">2026</span> by <a href="index.html">Badee</a>
+                  </p>
+               </div>
+               <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                  <div class="link-wrapper">
+                     <a href="contact.html">Terms &amp; Condition </a>
+                     <a href="contact.html">Privacy Policy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

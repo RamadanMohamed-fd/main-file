@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ex-coders">
+    <meta name="description" content="CCTV security from Badee: Hikvision and Dahua surveillance design, cameras, NVR/DVR recording, storage, VMS, remote monitoring and installation.">
+    <!-- ======== Page title ============ -->
+    <title>CCTV Security - Badee IT Solutions</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+         <div class="spinner">
+         </div>
+         <div class="txt-loading">
+            <span data-text-preloader="B" class="letters-loading">
+               B
+            </span>
+            <span data-text-preloader="A" class="letters-loading">
+               A
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+               D
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+         </div>
+         <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+         <div class="row">
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Riyadh, Saudi Arabia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:sales@badee.com.sa"><span
+                                            class="mailto:sales@badee.com.sa">sales@badee.com.sa</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+966553910099">0553910099</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/badee-sa"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header>
+        <div id="header-sticky" class="header-3">
+            <div class="plane-shape">
+                <img src="assets/img/plane.png" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img style="max-width: 70px;" src="assets/img/logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li><a href="solutions.html">Solutions</a></li>
+                                            <li class="has-dropdown">
+                                                <a href="news.html">
+                                                    Pages
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li class="has-dropdown">
+                                                        <a href="project.html">
+                                                            Projects
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="project.html">Project</a></li>
+                                                            <li><a href="project-carousel.html">Project Carousel</a>
+                                                            </li>
+                                                            <li><a href="project-details.html">Project Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="team.html">
+                                                            Team
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="team.html">Our Team</a></li>
+                                                            <li><a href="team-carousel.html">Team Carousel</a></li>
+                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="faq.html">Faq's</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn bg-white">
+                                    <span>
+                                        get A Quote
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-lg-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Hero Section Start >>-->
+    <section class="alna-hero fix">
+        <div class="alna-container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="alna-label wow fadeInUp" data-wow-delay=".1s">CCTV SECURITY</span>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">See More. Protect More. Respond Faster.</h1>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".3s">A modern CCTV system does more than record video. It provides visibility across your facilities, helps monitor critical areas and gives your organization access to recorded and live footage when it matters.</p>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".4s">Badee Solutions designs and deploys complete CCTV surveillance systems for offices, commercial facilities, warehouses, buildings and other business environments, using the appropriate combination of cameras, recording systems, storage, networking and monitoring technologies.</p>
+                </div>
+                <div class="hero-form">
+                    <div class="alna-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                        <img class="doodle" src="assets/img/icon/arrowDoodle.svg" alt="">
+                        <div class="alna-form-card">
+                            <h4>Interested?</h4>
+                            <p>Fill in this form to let us get back to you ASAP!</p>
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="Full Name">
+                                <input type="email" name="email" placeholder="Business Email">
+                                <div class="phone-field">
+                                    <span class="flag"><img src="assets/img/flag.png" alt=""><i class="fas fa-caret-down"></i></span>
+                                    <input type="text" name="phone" placeholder="Mobile Number">
+                                </div>
+                                <input type="text" name="company" placeholder="Company Name">
+                                <input type="text" name="message" placeholder="More details about your requirements">
+                                <button type="submit">Talk to a CCTV Expert</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section first fix" id="cctv-what">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">VIDEO SURVEILLANCE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">A Complete Surveillance Environment</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A professional CCTV system consists of more than cameras. The cameras, recording equipment, storage, network or cabling infrastructure, power, displays and monitoring software must work together as one system.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A complete surveillance solution can include:</p>
+            </div>
+            <ul class="alna-bullets wow fadeInUp" data-wow-delay=".3s">
+                <li>IP or Analog Cameras</li>
+                <li>NVR or DVR</li>
+                <li>Surveillance HDD</li>
+                <li>PoE Switches</li>
+                <li>Power Supplies</li>
+                <li>Network or Coaxial Cabling</li>
+                <li>Monitors and Displays</li>
+                <li>Camera Mounts and Brackets</li>
+                <li>Video Management Software</li>
+                <li>Mobile Monitoring</li>
+                <li>Desktop Monitoring</li>
+                <li>Network Infrastructure</li>
+            </ul>
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".3s" style="margin-top:44px;">
+                <div class="txt">
+                    <h3>Designed around your site</h3>
+                    <p>Badee designs the complete environment around your site, coverage requirements, recording needs and operational objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-platforms">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CCTV TECHNOLOGY</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Hikvision &amp; Dahua Surveillance Solutions</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Badee can design and deploy CCTV environments using established surveillance technologies from Hikvision and Dahua, selecting the appropriate equipment based on the site, coverage requirements, recording duration and operational needs.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Hikvision CCTV</h4>
+                    <p>Hikvision provides a broad portfolio of video surveillance technologies covering cameras, recording systems, storage, video management and related surveillance infrastructure. Solutions can include IP cameras, analog cameras, NVRs, DVRs, surveillance storage, video management, mobile monitoring and network/PoE infrastructure.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Dahua CCTV</h4>
+                    <p>Dahua provides video surveillance technologies covering cameras, recorders, storage, video management and supporting surveillance infrastructure. Solutions can include IP cameras, analog cameras, NVRs, DVRs, surveillance storage, video management and mobile monitoring.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Network &amp; PoE Infrastructure</h4>
+                    <p>The appropriate platform and equipment are selected based on the customer's site, coverage, recording, integration and operational requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-cameras">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">SURVEILLANCE CAMERAS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">The Right Camera for Every Area</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Different areas require different camera types, resolutions, viewing angles and protection levels. We design camera placement around the areas that need to be monitored and the level of detail required.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>IP Cameras</h4>
+                    <p>Network-based cameras that transmit video over IP networks and can integrate with modern NVR, VMS and network infrastructure.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Analog Cameras</h4>
+                    <p>Traditional CCTV cameras using coaxial infrastructure and compatible DVR recording systems.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Indoor Cameras</h4>
+                    <p>Cameras designed for offices, corridors, reception areas, retail environments and other indoor locations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Outdoor Cameras</h4>
+                    <p>Cameras designed for external environments with appropriate weather and environmental protection.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Fixed Cameras</h4>
+                    <p>Fixed-view cameras for monitoring defined areas and specific points of interest.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>PTZ Cameras</h4>
+                    <p>Pan-Tilt-Zoom cameras that provide remote control of camera direction and zoom on supported models.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Specialized Cameras</h4>
+                    <p>Specialized surveillance cameras can be selected for environments requiring specific features such as enhanced low-light performance, wider coverage or other supported capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-recording">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">RECORDING &amp; STORAGE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Keep the Footage You Need</h2>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>NVR &mdash; Network Video Recorder</h4>
+                    <p>Record and manage IP camera streams within a network-based surveillance environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>DVR &mdash; Digital Video Recorder</h4>
+                    <p>Record and manage compatible analog CCTV camera systems.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Surveillance HDD</h4>
+                    <p>Use surveillance-grade storage designed for continuous video recording workloads and appropriate retention requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recording Retention</h4>
+                    <p>Configure storage capacity and recording settings around the required retention period, camera count, resolution and recording mode.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Backup &amp; Export</h4>
+                    <p>Support appropriate video export and retention workflows for footage that needs to be preserved or reviewed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-infra">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CCTV INFRASTRUCTURE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">The Infrastructure Behind Your Cameras</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Reliable surveillance depends on the infrastructure connecting and powering the cameras and recording systems.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>PoE Switches</h4>
+                    <p>Provide network connectivity and power to supported IP cameras through Power over Ethernet.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Managed Switches</h4>
+                    <p>Support network management and segmentation requirements for larger or more structured surveillance environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Network Cables</h4>
+                    <p>Structured network cabling for IP camera connectivity.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Coaxial Cables</h4>
+                    <p>Cabling infrastructure for compatible analog CCTV deployments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Power Supply Units</h4>
+                    <p>Provide appropriate power to compatible cameras and surveillance equipment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Network Routers</h4>
+                    <p>Provide required network connectivity and routing for surveillance environments where applicable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-monitors">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">VIDEO MONITORING</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">See Your Surveillance Environment in Real Time</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Monitoring displays allow security teams and authorized users to view live and recorded surveillance footage.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Surveillance Monitors</h4>
+                    <p>Dedicated displays for CCTV monitoring environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Video Walls</h4>
+                    <p>Multi-display environments for centralized monitoring of larger surveillance deployments where required.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Control Room Displays</h4>
+                    <p>Display solutions for security and monitoring operators.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Multi-Camera Viewing</h4>
+                    <p>Configure supported surveillance systems to display multiple camera feeds simultaneously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-mounts">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CAMERA INSTALLATION ACCESSORIES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Position and Protect Every Camera</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Camera positioning and mounting should be planned as part of the overall surveillance design to achieve the required field of view and coverage.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Camera Mounts</h4>
+                    <p>Select appropriate mounting solutions based on camera type and installation location.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Brackets</h4>
+                    <p>Wall, ceiling and other compatible mounting brackets for supported cameras.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Enclosures</h4>
+                    <p>Protect cameras in environments where additional physical or environmental protection is required.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Poles &amp; Specialized Mounting</h4>
+                    <p>Use appropriate mounting structures for external areas and locations requiring specialized installation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-vms">
+        <div class="alna-container">
+            <div class="alna-row reverse">
+                <div class="alna-col wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">VIDEO MANAGEMENT</span>
+                    <h3>Manage Your Surveillance From One Place</h3>
+                    <p>Video Management Software can provide centralized access to live video, recorded footage, camera management and surveillance operations depending on the selected platform.</p>
+                    <div class="alna-item">
+                        <h4>Video Management Software &mdash; VMS</h4>
+                        <p>Centralize supported cameras and surveillance devices for monitoring and management.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Live Monitoring</h4>
+                        <p>View live camera feeds and monitor selected areas in real time.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Recording Management</h4>
+                        <p>Search and review recorded footage based on supported system capabilities.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>User Management</h4>
+                        <p>Control access to surveillance systems and footage for authorized users.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Event Management</h4>
+                        <p>Review supported alerts and events generated by the surveillance environment.</p>
+                    </div>
+                </div>
+                <div class="alna-col alna-img wow fadeInUp" data-wow-delay=".4s">
+                    <img src="assets/img/contact2.png" alt="Badee technology illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-remote">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">REMOTE MONITORING</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Monitor Your Business From Wherever You Are</h2>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Mobile Monitoring</h4>
+                    <p>Access supported live and recorded surveillance footage from authorized mobile devices.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Desktop Monitoring</h4>
+                    <p>Monitor cameras and surveillance systems from authorized computers and security workstations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Remote Access</h4>
+                    <p>Enable secure remote access to supported surveillance environments according to the system configuration and security requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Notifications</h4>
+                    <p>Receive supported alerts and notifications for selected surveillance events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-services">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">PROFESSIONAL SERVICES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">From Site Survey to Complete CCTV Deployment</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A successful CCTV project starts with understanding the site. Badee can support the complete deployment lifecycle from assessment and design to installation, configuration and handover.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Site Survey</h4>
+                    <p>Assess the site, identify surveillance requirements and determine appropriate camera locations and coverage areas.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>CCTV Design</h4>
+                    <p>Design camera placement, recording architecture, storage requirements, networking and monitoring based on the site and operational requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Camera Selection</h4>
+                    <p>Select appropriate camera types, resolutions, features and protection levels for each monitored area.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>CCTV Installation</h4>
+                    <p>Install cameras, recorders, displays, networking equipment, cabling and related components.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>NVR / DVR Configuration</h4>
+                    <p>Configure recording systems, storage, recording schedules, camera settings and supported functionality.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Network Configuration</h4>
+                    <p>Configure the required switches, network components, PoE and connectivity for IP-based surveillance systems.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>VMS Configuration</h4>
+                    <p>Configure video management and monitoring software according to the surveillance environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Mobile &amp; Remote Configuration</h4>
+                    <p>Configure authorized mobile and remote monitoring access where required.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Testing &amp; Commissioning</h4>
+                    <p>Test camera coverage, recording, playback, storage, monitoring and connectivity before project handover.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>User Training</h4>
+                    <p>Train authorized users on monitoring, playback, footage export and other supported system functions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-process">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">OUR APPROACH</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Designed Around Your Site, Not Just Your Camera Count</h2>
+            </div>
+            <div class="alna-steps">
+                <div class="step wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Understand</h4>
+                    <p>Understand your facility, security objectives, monitored areas and operational requirements.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Survey</h4>
+                    <p>Assess the physical environment and identify appropriate camera positions and infrastructure requirements.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Design</h4>
+                    <p>Develop the camera, recording, storage, network and monitoring architecture.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Deploy</h4>
+                    <p>Install and configure the complete surveillance environment.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".5s">
+                    <span class="num">05</span>
+                    <h4>Test</h4>
+                    <p>Validate camera coverage, recording, storage and monitoring functionality.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".6s">
+                    <span class="num">06</span>
+                    <h4>Handover</h4>
+                    <p>Provide documentation, user guidance and operational handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-environments">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">SURVEILLANCE FOR EVERY ENVIRONMENT</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Security Solutions Built Around Your Facility</h2>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Offices</h4>
+                    <p>Monitor entrances, reception areas, corridors, common areas and other important locations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Warehouses</h4>
+                    <p>Monitor storage areas, loading zones, entrances and other critical operational areas.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Retail</h4>
+                    <p>Support visibility across customer areas, entrances, cash points and other designated locations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Commercial Buildings</h4>
+                    <p>Monitor building entrances, common areas, parking areas and other required locations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Industrial Facilities</h4>
+                    <p>Provide surveillance across operational areas, access points and designated critical zones.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Residential &amp; Compound Environments</h4>
+                    <p>Design surveillance systems for entrances, perimeter areas, shared spaces and other required locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-modernization">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">UPGRADE YOUR CCTV</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Modernize Your Existing Surveillance System</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Older CCTV systems may provide limited image quality, storage, remote access or management capabilities. Badee can assess existing environments and identify opportunities to upgrade or expand surveillance capabilities.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Camera Replacement</h4>
+                    <p>Upgrade existing cameras to higher-resolution or more appropriate surveillance technologies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Recorder Upgrade</h4>
+                    <p>Replace or upgrade DVR/NVR infrastructure to support additional cameras and improved recording capabilities.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Storage Expansion</h4>
+                    <p>Increase surveillance storage to support required retention periods.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Network Upgrade</h4>
+                    <p>Improve switching, PoE and network infrastructure for IP-based surveillance.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Remote Monitoring</h4>
+                    <p>Add supported mobile or desktop monitoring capabilities.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>System Expansion</h4>
+                    <p>Add cameras and surveillance coverage to new areas or locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-benefits">
+        <div class="alna-container">
+            <div class="alna-split">
+                <div class="alna-split-left wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">BUSINESS BENEFITS</span>
+                    <h2 class="alna-h2">Better Visibility Across Your Facility</h2>
+                </div>
+                <div class="alna-split-right">
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Deterrence</h4>
+                        <p>Visible surveillance can help deter unwanted activity and support security operations.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Visibility</h4>
+                        <p>Improve visibility across important areas of your facility.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Evidence</h4>
+                        <p>Maintain recorded footage that can be reviewed when incidents occur, subject to configured retention and system capabilities.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Remote Monitoring</h4>
+                        <p>Allow authorized users to monitor supported surveillance systems remotely.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Operational Awareness</h4>
+                        <p>Use surveillance visibility to support awareness of activities across your facilities.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Scalability</h4>
+                        <p>Expand surveillance coverage as your facilities and security requirements grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-why">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">WHY BADEE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">More Than Camera Installation</h2>
+            </div>
+            <div class="alna-grid cols-2 numbered">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Complete Solution</h4>
+                    <p>We consider cameras, recording, storage, networking, power, software and monitoring as one surveillance environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Technology Flexibility</h4>
+                    <p>We can design solutions around Hikvision and Dahua technologies according to project requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Site-Based Design</h4>
+                    <p>Camera selection and placement are based on the actual site and required coverage rather than simply selling a fixed package.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Complete Deployment</h4>
+                    <p>From site survey and design through installation, configuration, testing and handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-managed">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">ONGOING CCTV SUPPORT</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Keep Your Surveillance System Operational</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">CCTV systems require ongoing maintenance to remain reliable. Badee can provide support and maintenance services based on the size and requirements of your surveillance environment.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Possible services:</p>
+            </div>
+            <ul class="alna-bullets wow fadeInUp" data-wow-delay=".3s">
+                <li>Camera health checks</li>
+                <li>Recorder monitoring</li>
+                <li>Storage health checks</li>
+                <li>Network troubleshooting</li>
+                <li>Camera configuration</li>
+                <li>Recording verification</li>
+                <li>Remote access support</li>
+                <li>System maintenance</li>
+                <li>Fault diagnosis</li>
+                <li>Equipment replacement coordination</li>
+            </ul>
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".3s" style="margin-top:44px;">
+                <div class="txt">
+                    <h3>Connect CCTV to your ongoing Services</h3>
+                    <p>Ongoing surveillance support and maintenance can be delivered through Badee's Managed IT Services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cctv-tech">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CCTV TECHNOLOGY</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Complete Surveillance Technology</h2>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay=".3s">
+                <div class="alna-taggroup">
+                    <h5>Cameras</h5>
+                    <div class="alna-tags">
+                        <span>IP Cameras</span>
+                        <span>Analog Cameras</span>
+                    </div>
+                </div>
+                <div class="alna-taggroup">
+                    <h5>Recording</h5>
+                    <div class="alna-tags">
+                        <span>NVR</span>
+                        <span>DVR</span>
+                    </div>
+                </div>
+                <div class="alna-taggroup">
+                    <h5>Storage</h5>
+                    <div class="alna-tags">
+                        <span>Surveillance HDD</span>
+                    </div>
+                </div>
+                <div class="alna-taggroup">
+                    <h5>Installation</h5>
+                    <div class="alna-tags">
+                        <span>Camera Mounts</span>
+                        <span>Brackets</span>
+                        <span>Enclosures</span>
+                    </div>
+                </div>
+                <div class="alna-taggroup">
+                    <h5>Infrastructure</h5>
+                    <div class="alna-tags">
+                        <span>Network Cables</span>
+                        <span>Coaxial Cables</span>
+                        <span>PoE Switches</span>
+                        <span>Power Supply Units</span>
+                        <span>Network Routers</span>
+                        <span>Managed Switches</span>
+                    </div>
+                </div>
+                <div class="alna-taggroup">
+                    <h5>Monitoring</h5>
+                    <div class="alna-tags">
+                        <span>Monitors &amp; Video Displays</span>
+                        <span>VMS</span>
+                        <span>Mobile Applications</span>
+                        <span>Desktop Applications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cctv-faq">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CCTV FAQ</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+            </div>
+            <div class="alna-faq">
+                <div class="accordion" id="acccctv">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq1" aria-expanded="false" aria-controls="cctvfaq1">
+                                What is the difference between IP and Analog CCTV?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq1" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                IP cameras transmit video over network infrastructure, while analog cameras typically use coaxial cabling and compatible DVR systems. The appropriate option depends on the existing infrastructure, requirements and desired system architecture.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq2" aria-expanded="false" aria-controls="cctvfaq2">
+                                Do you provide Hikvision and Dahua CCTV?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq2" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                Yes. Badee can design and deploy CCTV surveillance solutions using Hikvision and Dahua technologies based on the project requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq3" aria-expanded="false" aria-controls="cctvfaq3">
+                                Do you provide both NVR and DVR systems?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq3" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                Yes. NVR solutions can be used with compatible IP cameras, while DVR solutions are designed for compatible analog CCTV environments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq4" aria-expanded="false" aria-controls="cctvfaq4">
+                                How long can CCTV footage be stored?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq4" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                Retention depends on factors including camera count, resolution, recording mode, frame rate, storage capacity and required retention period. Badee can calculate the appropriate storage requirements during the design stage.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq5" aria-expanded="false" aria-controls="cctvfaq5">
+                                Can I monitor my CCTV from my phone?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq5" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                Yes. Supported CCTV platforms can provide mobile and desktop monitoring capabilities when appropriately configured and securely connected.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq6" aria-expanded="false" aria-controls="cctvfaq6">
+                                Can you upgrade an existing CCTV system?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq6" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                Yes. We can assess the existing system and recommend camera, recorder, storage, network or monitoring upgrades where appropriate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cctvfaq7" aria-expanded="false" aria-controls="cctvfaq7">
+                                Do you provide CCTV maintenance?
+                            </button>
+                        </h5>
+                        <div id="cctvfaq7" class="accordion-collapse collapse" data-bs-parent="#acccctv">
+                            <div class="accordion-body">
+                                Yes. Ongoing maintenance, troubleshooting, system checks and support can be provided according to the required service model.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Final CTA >>-->
+    <section class="alna-cta-section" id="cctv-cta">
+        <div class="alna-container">
+            <div class="alna-cta wow fadeInUp" data-wow-delay=".2s">
+                <div class="cta-text">
+                    <span class="cta-eyebrow">PROTECT YOUR FACILITY</span>
+                    <h2>See What Matters. When It Matters.</h2>
+                    <p>Let Badee assess your facility and design a CCTV solution that provides the right coverage, recording, storage and monitoring capabilities for your business.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn">Talk to a CCTV Expert</a>
+                    <a href="contact.html" class="btn ghost">Request a Site Survey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Footer Section Start >>-->
+    <footer class="footer-area">
+      <div class="widget-area style1  pt-100 pb-80">
+         <div class="container">
+            <div class="footer-layout style1">
+               <div class="row">
+                  <div class="col-xl-4 col-md-6 col-12">
+                     <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
+                        <div class="gt-widget-about">
+                           <div class="about-logo">
+                              <a href="index.html"><img src="assets/img/footer-logo.svg" alt="Badee IT Solutions"></a>
+                           </div>
+                           <p style="max-width: 250px; " class="about-text">Technology solutions and services that help businesses build,
+                              secure and manage their IT environment.
+                           </p>
+                           <p class="about-text fw-semibold">Just Badee It.</p>
+                           <div class="gt-social style2">
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                              <a href="https://www.instagram.com/Badee_ksa"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
+                        <h3 class="widget_title">Solutions</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="microsoft-365.html"><i class="fa-solid fa-chevrons-right"></i>Microsoft
+                                    365</a></li>
+                              <li><a href="cloud-solutions.html"><i class="fa-solid fa-chevrons-right"></i>Cloud
+                                    Solutions</a></li>
+                              <li><a href="backup-disaster-recovery.html"><i class="fa-solid fa-chevrons-right"></i>Backup
+                                    &amp; Disaster Recovery</a></li>
+                              <li><a href="it-infrastructure.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Infrastructure</a></li>
+                              <li><a href="next-gen-firewalls.html"><i class="fa-solid fa-chevrons-right"></i>Next-Gen
+                                    Firewalls</a></li>
+                              <li><a href="smart-meeting-rooms.html"><i class="fa-solid fa-chevrons-right"></i>Smart
+                                    Meeting Rooms</a></li>
+                              <li><a href="cctv-security.html"><i class="fa-solid fa-chevrons-right"></i>CCTV
+                                    Security</a></li>
+                              <li><a href="solutions.html"><i class="fa-solid fa-chevrons-right"></i>Business
+                                    Applications</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.3s">
+                        <h3 class="widget_title">Services</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="managed-it-services.html"><i class="fa-solid fa-chevrons-right"></i>Managed IT
+                                    Services</a></li>
+                              <li><a href="cybersecurity-services.html"><i class="fa-solid fa-chevrons-right"></i>Cybersecurity
+                                    Services</a></li>
+                              <li><a href="design-development.html"><i class="fa-solid fa-chevrons-right"></i>Design
+                                    &amp; Development</a></li>
+                              <li><a href="service-details.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Procurement</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
+                        <h3 class="widget_title">Company</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i>About Badee</a></li>
+                              <li><a href="index.html#industries"><i class="fa-solid fa-chevrons-right"></i>Industries</a>
+                              </li>
+                              <li><a href="index.html#projects"><i class="fa-solid fa-chevrons-right"></i>Projects</a>
+                              </li>
+                              <li><a href="index.html#technology-partners"><i
+                                       class="fa-solid fa-chevrons-right"></i>Partners</a></li>
+                              <li><a href="news.html"><i class="fa-solid fa-chevrons-right"></i>Case Studies</a></li>
+                              <li><a href="contact.html"><i
+                                       class="fa-solid fa-chevrons-right"></i>Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.9s">
+                        <h3 class="widget_title">Contact</h3>
+                        <ul class="footer-contact-list">
+                           <li><a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i> <span>Riyadh, Saudi Arabia</span></a></li>
+                           <li><a href="mailto:sales@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>sales@badee.com.sa</span></a></li>
+                           <li><a href="mailto:helpdesk@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>helpdesk@badee.com.sa</span></a></li>
+                           <li><a href="tel:+966553910099"><i class="fa-solid fa-phone"></i>
+                                 <span>0553910099</span></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright-wrap bg-theme">
+         <div class="container">
+            <div class="copyright-layout">
+               <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
+                  <p class="copyright">
+                     <i class="fal fa-copyright"></i> All Copyright <span class="copyright-year">2026</span> by <a href="index.html">Badee</a>
+                  </p>
+               </div>
+               <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                  <div class="link-wrapper">
+                     <a href="contact.html">Terms &amp; Condition </a>
+                     <a href="contact.html">Privacy Policy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

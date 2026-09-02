@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ex-coders">
+    <meta name="description" content="Next-generation firewall solutions from Badee using Fortinet FortiGate and Sophos Firewall: design, deployment, VPN, migration and management.">
+    <!-- ======== Page title ============ -->
+    <title>Next-Gen Firewalls - Badee IT Solutions</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+         <div class="spinner">
+         </div>
+         <div class="txt-loading">
+            <span data-text-preloader="B" class="letters-loading">
+               B
+            </span>
+            <span data-text-preloader="A" class="letters-loading">
+               A
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+               D
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+         </div>
+         <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+         <div class="row">
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Riyadh, Saudi Arabia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:sales@badee.com.sa"><span
+                                            class="mailto:sales@badee.com.sa">sales@badee.com.sa</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+966553910099">0553910099</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/badee-sa"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header>
+        <div id="header-sticky" class="header-3">
+            <div class="plane-shape">
+                <img src="assets/img/plane.png" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img style="max-width: 70px;" src="assets/img/logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li><a href="solutions.html">Solutions</a></li>
+                                            <li class="has-dropdown">
+                                                <a href="news.html">
+                                                    Pages
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li class="has-dropdown">
+                                                        <a href="project.html">
+                                                            Projects
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="project.html">Project</a></li>
+                                                            <li><a href="project-carousel.html">Project Carousel</a>
+                                                            </li>
+                                                            <li><a href="project-details.html">Project Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="team.html">
+                                                            Team
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="team.html">Our Team</a></li>
+                                                            <li><a href="team-carousel.html">Team Carousel</a></li>
+                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="faq.html">Faq's</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn bg-white">
+                                    <span>
+                                        get A Quote
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-lg-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Hero Section Start >>-->
+    <section class="alna-hero fix">
+        <div class="alna-container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="alna-label wow fadeInUp" data-wow-delay=".1s">NEXT-GEN FIREWALLS</span>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Secure Your Network With Next-Generation Protection</h1>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".3s">Modern businesses need more than a traditional firewall. Today's network environment includes cloud applications, remote users, connected devices, branch offices and increasingly sophisticated cyber threats.</p>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".4s">Badee Solutions provides next-generation firewall solutions from Fortinet and Sophos to help organizations protect network traffic, control access, secure applications and strengthen their overall network security posture.</p>
+                </div>
+                <div class="hero-form">
+                    <div class="alna-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                        <img class="doodle" src="assets/img/icon/arrowDoodle.svg" alt="">
+                        <div class="alna-form-card">
+                            <h4>Interested?</h4>
+                            <p>Fill in this form to let us get back to you ASAP!</p>
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="Full Name">
+                                <input type="email" name="email" placeholder="Business Email">
+                                <div class="phone-field">
+                                    <span class="flag"><img src="assets/img/flag.png" alt=""><i class="fas fa-caret-down"></i></span>
+                                    <input type="text" name="phone" placeholder="Mobile Number">
+                                </div>
+                                <input type="text" name="company" placeholder="Company Name">
+                                <input type="text" name="message" placeholder="More details about your requirements">
+                                <button type="submit">Talk to a Security Expert</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section first fix" id="fw-what">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">NETWORK SECURITY</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">More Than a Traditional Firewall</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A next-generation firewall combines traditional network traffic control with additional security capabilities designed to provide greater visibility, control and protection across modern network environments.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Depending on the selected platform and licensing, capabilities can include:</p>
+            </div>
+            <ul class="alna-bullets wow fadeInUp" data-wow-delay=".3s">
+                <li>Application control</li>
+                <li>Intrusion prevention</li>
+                <li>Web filtering</li>
+                <li>Malware protection</li>
+                <li>VPN connectivity</li>
+                <li>Network segmentation</li>
+                <li>User and identity awareness</li>
+                <li>Threat detection</li>
+                <li>Security monitoring</li>
+                <li>Secure remote access</li>
+            </ul>
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".3s" style="margin-top:44px;">
+                <div class="txt">
+                    <h3>The right architecture depends on your environment</h3>
+                    <p>The right firewall architecture depends on your network, users, applications, locations, security requirements and business objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-platforms">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">FIREWALL PLATFORMS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Fortinet &amp; Sophos Firewall Solutions</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Badee works with leading next-generation firewall platforms and can help you select, deploy and manage the solution that best fits your environment.</p>
+            </div>
+            <div class="alna-grid cols-2">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Fortinet FortiGate</h4>
+                    <p>FortiGate provides next-generation firewall capabilities designed to protect networks, users, applications and connected environments. Depending on the model and subscription, FortiGate environments can provide next-generation firewall, intrusion prevention, application control, web filtering, VPN, Secure SD-WAN, network security, threat protection and centralized management.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Sophos Firewall</h4>
+                    <p>Sophos Firewall provides network security, traffic control, protection and connectivity capabilities for organizations of different sizes and network architectures. Depending on the model and licensing, capabilities can include next-generation firewall, intrusion prevention, web and application control, VPN, SD-WAN, network protection, remote access, security monitoring and centralized management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="fw-capabilities">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">SECURITY CAPABILITIES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Protect More Than Your Network Perimeter</h2>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Application Control</h4>
+                    <p>Identify and control application traffic based on organizational policies and security requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Intrusion Prevention</h4>
+                    <p>Help detect and block suspicious network activity and known attack patterns.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Web Security</h4>
+                    <p>Control access to websites and web content based on organizational policies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>VPN &amp; Secure Connectivity</h4>
+                    <p>Connect remote users, offices and networks through secure VPN technologies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Network Segmentation</h4>
+                    <p>Separate users, systems and workloads to improve security and reduce unnecessary network exposure.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Threat Protection</h4>
+                    <p>Use available security capabilities to help detect and prevent malicious traffic and threats.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Traffic Visibility</h4>
+                    <p>Gain greater visibility into network activity, applications and traffic patterns.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Security Policies</h4>
+                    <p>Define and enforce access and network security policies based on business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-environments">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BUILT FOR YOUR ENVIRONMENT</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Security for Every Network</h2>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Small &amp; Medium Businesses</h4>
+                    <p>Protect your business network, users, internet access and critical systems with an appropriately sized firewall solution.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Enterprise Networks</h4>
+                    <p>Secure larger and more complex environments with advanced firewall architecture, segmentation, connectivity and security controls.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Branch Offices</h4>
+                    <p>Connect and protect branch locations with secure network connectivity and centralized security policies where appropriate.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Remote Workforce</h4>
+                    <p>Provide secure remote connectivity and controlled access to business resources.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Hybrid &amp; Cloud Environments</h4>
+                    <p>Extend network security across on-premises infrastructure, cloud environments and hybrid architectures where supported.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="fw-services">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">PROFESSIONAL SERVICES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">We Don't Just Install a Firewall. We Secure the Environment Around It.</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">A firewall is only effective when it is properly designed, configured and maintained. Badee can support the complete firewall lifecycle from assessment and architecture to deployment, optimization and ongoing management.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firewall Assessment</h4>
+                    <p>Review your existing firewall, network architecture, security policies and connectivity requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firewall Sizing &amp; Selection</h4>
+                    <p>Determine the appropriate firewall platform and appliance based on network traffic, users, applications, security requirements and expected growth.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firewall Architecture &amp; Design</h4>
+                    <p>Design firewall placement, network zones, interfaces, segmentation, connectivity and security policies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firewall Deployment</h4>
+                    <p>Install and configure FortiGate or Sophos Firewall appliances according to the approved design.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firewall Migration</h4>
+                    <p>Migrate from an existing firewall platform to FortiGate or Sophos with an appropriate transition plan designed to minimize disruption.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Security Policy Configuration</h4>
+                    <p>Configure firewall rules, access policies, application controls, web controls, VPNs and other required security policies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>VPN Configuration</h4>
+                    <p>Configure secure site-to-site and remote-access VPN connectivity based on business requirements and supported technologies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firewall Optimization</h4>
+                    <p>Review existing configurations and policies to improve security, performance, visibility and maintainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-connectivity">
+        <div class="alna-container">
+            <div class="alna-row reverse">
+                <div class="alna-col wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">CONNECTIVITY</span>
+                    <h3>Secure Users, Offices and Applications</h3>
+                    <div class="alna-item">
+                        <h4>Site-to-Site VPN</h4>
+                        <p>Secure connectivity between offices, networks and supported environments.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Remote Access VPN</h4>
+                        <p>Enable authorized remote users to securely access required business resources.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Branch Connectivity</h4>
+                        <p>Connect branch offices to central infrastructure and services through appropriate secure network architectures.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Cloud Connectivity</h4>
+                        <p>Connect on-premises networks with supported cloud environments as part of a hybrid architecture.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Secure SD-WAN</h4>
+                        <p>Use supported SD-WAN capabilities to improve connectivity and control across distributed environments.</p>
+                    </div>
+                </div>
+                <div class="alna-col alna-img wow fadeInUp" data-wow-delay=".4s">
+                    <img src="assets/img/contact2.png" alt="Badee technology illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="fw-management">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">SECURITY MANAGEMENT</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Keep Your Firewall Secure After Deployment</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Firewall security is not a one-time installation. Policies, threats, users, applications and network requirements change over time.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Configuration Management</h4>
+                    <p>Maintain and update firewall configurations based on approved requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Rule Review</h4>
+                    <p>Review firewall rules and policies to identify unnecessary, outdated or potentially risky configurations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Firmware &amp; Security Updates</h4>
+                    <p>Support appropriate firmware and security update activities according to the selected platform and environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Monitoring</h4>
+                    <p>Monitor firewall availability and relevant security or operational events as part of the selected support model.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Reporting</h4>
+                    <p>Provide appropriate operational and security reporting based on the agreed service scope.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-choose">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CHOOSING THE RIGHT PLATFORM</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Fortinet or Sophos?</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Both platforms provide next-generation firewall capabilities. The right choice depends on your organization's network architecture, security requirements, existing technologies, users, locations and operational model.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Badee can assess your environment and recommend the appropriate platform based on your actual requirements rather than selecting a firewall based only on brand or appliance size.</p>
+            </div>
+            <div class="alna-compare">
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <h4>Fortinet may be considered when:</h4>
+                    <ul>
+                        <li>Multiple sites and network architectures need to be connected</li>
+                        <li>Network performance and scalability are key considerations</li>
+                        <li>The organization has complex network environments</li>
+                        <li>Secure networking and SD-WAN capabilities are important</li>
+                        <li>A broader Fortinet security ecosystem is relevant</li>
+                    </ul>
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay=".2s">
+                    <h4>Sophos may be considered when:</h4>
+                    <ul>
+                        <li>Ease of administration is an important consideration</li>
+                        <li>The organization already uses Sophos security technologies</li>
+                        <li>Integrated endpoint and network security is valuable</li>
+                        <li>The environment requires centralized security management</li>
+                        <li>The organization wants to simplify security operations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="fw-modernization">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">MODERNIZE YOUR NETWORK SECURITY</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Replace Legacy Firewalls With Modern Protection</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Older firewall platforms may no longer provide the visibility, performance or security capabilities required by modern networks. Badee can help organizations assess their existing firewall environment and plan a structured transition to a next-generation platform.</p>
+            </div>
+            <div class="alna-steps">
+                <div class="step wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Assess</h4>
+                    <p>Review the existing firewall, rules, network topology and requirements.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Design</h4>
+                    <p>Design the new firewall architecture and security policies.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Migrate</h4>
+                    <p>Move required configurations, connectivity and policies to the new platform.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Validate</h4>
+                    <p>Test connectivity, security controls, applications and remote access.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".5s">
+                    <span class="num">05</span>
+                    <h4>Optimize</h4>
+                    <p>Review the environment and improve the configuration after deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-benefits">
+        <div class="alna-container">
+            <div class="alna-split">
+                <div class="alna-split-left wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">BUSINESS BENEFITS</span>
+                    <h2 class="alna-h2">Stronger Network Security. Better Visibility. More Control.</h2>
+                </div>
+                <div class="alna-split-right">
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Protect Your Network</h4>
+                        <p>Control and protect traffic entering, leaving and moving through your network.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Improve Visibility</h4>
+                        <p>Gain greater visibility into network traffic, applications and security events.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Control Access</h4>
+                        <p>Define who and what can access business resources and services.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Support Remote Work</h4>
+                        <p>Provide secure connectivity for remote users and distributed teams.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Connect Locations</h4>
+                        <p>Securely connect branches, offices and supported cloud environments.</p>
+                    </div>
+                    <div class="alna-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                        <h4>Prepare for Growth</h4>
+                        <p>Build a network security architecture that can evolve with your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="fw-why">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">WHY BADEE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Firewall Expertise Beyond the Appliance</h2>
+            </div>
+            <div class="alna-grid cols-2 numbered">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Fortinet &amp; Sophos</h4>
+                    <p>Support for both FortiGate and Sophos Firewall environments allows us to recommend the platform based on your requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Network Understanding</h4>
+                    <p>Firewall security depends on the network around it. Our infrastructure capabilities allow us to consider the broader network architecture.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Security-Focused Configuration</h4>
+                    <p>We focus on appropriate policies, segmentation, access control and security capabilities&mdash;not simply installing the appliance.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Ongoing Support</h4>
+                    <p>Your firewall can continue to be monitored, maintained and supported after deployment through an appropriate service model.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-managed">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">NEED ONGOING MANAGEMENT?</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Let Badee Manage Your Firewall Environment</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Firewall environments require ongoing administration, monitoring, updates, policy changes and security reviews. Badee can provide ongoing firewall management as part of an appropriate managed service engagement.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Possible scope:</p>
+            </div>
+            <ul class="alna-bullets wow fadeInUp" data-wow-delay=".3s">
+                <li>Firewall monitoring</li>
+                <li>Configuration management</li>
+                <li>Policy changes</li>
+                <li>Rule review</li>
+                <li>VPN administration</li>
+                <li>Firmware updates</li>
+                <li>Security updates</li>
+                <li>Performance monitoring</li>
+                <li>Troubleshooting</li>
+                <li>Reporting</li>
+            </ul>
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".3s" style="margin-top:44px;">
+                <div class="txt">
+                    <h3>Ongoing management</h3>
+                    <p>Firewall administration, monitoring, policy management, updates and support can be provided through Badee's Managed IT Services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="fw-tech">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">FIREWALL PLATFORMS WE SUPPORT</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">FortiGate &amp; Sophos Firewall</h2>
+            </div>
+            <div class="alna-grid cols-2">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Fortinet FortiGate</h4>
+                    <p>Next-generation network security and secure networking capabilities for organizations ranging from smaller environments to complex enterprise networks.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Sophos Firewall</h4>
+                    <p>Next-generation network protection and secure connectivity capabilities designed for modern business environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="fw-faq">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">NEXT-GEN FIREWALL FAQ</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+            </div>
+            <div class="alna-faq">
+                <div class="accordion" id="accfw">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq1" aria-expanded="false" aria-controls="fwfaq1">
+                                What is a next-generation firewall?
+                            </button>
+                        </h5>
+                        <div id="fwfaq1" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                A next-generation firewall combines traditional firewall functions with additional capabilities such as application control, intrusion prevention, web security and other security controls.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq2" aria-expanded="false" aria-controls="fwfaq2">
+                                Does Badee provide Fortinet FortiGate?
+                            </button>
+                        </h5>
+                        <div id="fwfaq2" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                Yes. FortiGate can be provided, implemented and supported as part of a network security solution based on the customer's requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq3" aria-expanded="false" aria-controls="fwfaq3">
+                                Does Badee provide Sophos Firewall?
+                            </button>
+                        </h5>
+                        <div id="fwfaq3" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                Yes. Sophos Firewall can be provided, implemented and supported as part of a network security solution based on the customer's requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq4" aria-expanded="false" aria-controls="fwfaq4">
+                                Which is better, Fortinet or Sophos?
+                            </button>
+                        </h5>
+                        <div id="fwfaq4" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                There is no universal answer. The appropriate platform depends on the organization's network architecture, security requirements, existing technology environment, users, locations and operational needs.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq5" aria-expanded="false" aria-controls="fwfaq5">
+                                Can you replace our existing firewall?
+                            </button>
+                        </h5>
+                        <div id="fwfaq5" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                Yes. Badee can assess the existing environment and plan a firewall migration to FortiGate or Sophos while considering network connectivity, security policies, VPNs and business applications.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq6" aria-expanded="false" aria-controls="fwfaq6">
+                                Can you configure VPNs?
+                            </button>
+                        </h5>
+                        <div id="fwfaq6" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                Yes. Site-to-site and supported remote-access VPN configurations can be implemented according to the required network architecture.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fwfaq7" aria-expanded="false" aria-controls="fwfaq7">
+                                Do you provide ongoing firewall management?
+                            </button>
+                        </h5>
+                        <div id="fwfaq7" class="accordion-collapse collapse" data-bs-parent="#accfw">
+                            <div class="accordion-body">
+                                Yes. Ongoing firewall administration, monitoring, policy management, updates and support can be provided through an appropriate managed service engagement.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Final CTA >>-->
+    <section class="alna-cta-section" id="fw-cta">
+        <div class="alna-container">
+            <div class="alna-cta wow fadeInUp" data-wow-delay=".2s">
+                <div class="cta-text">
+                    <span class="cta-eyebrow">SECURE YOUR NETWORK</span>
+                    <h2>Is Your Firewall Ready for Today's Threats?</h2>
+                    <p>Let Badee assess your existing network security environment and help you select, deploy and manage the right next-generation firewall solution for your business.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn">Talk to a Security Expert</a>
+                    <a href="contact.html" class="btn ghost">Request a Firewall Assessment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Footer Section Start >>-->
+    <footer class="footer-area">
+      <div class="widget-area style1  pt-100 pb-80">
+         <div class="container">
+            <div class="footer-layout style1">
+               <div class="row">
+                  <div class="col-xl-4 col-md-6 col-12">
+                     <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
+                        <div class="gt-widget-about">
+                           <div class="about-logo">
+                              <a href="index.html"><img src="assets/img/footer-logo.svg" alt="Badee IT Solutions"></a>
+                           </div>
+                           <p style="max-width: 250px; " class="about-text">Technology solutions and services that help businesses build,
+                              secure and manage their IT environment.
+                           </p>
+                           <p class="about-text fw-semibold">Just Badee It.</p>
+                           <div class="gt-social style2">
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                              <a href="https://www.instagram.com/Badee_ksa"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
+                        <h3 class="widget_title">Solutions</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="microsoft-365.html"><i class="fa-solid fa-chevrons-right"></i>Microsoft
+                                    365</a></li>
+                              <li><a href="cloud-solutions.html"><i class="fa-solid fa-chevrons-right"></i>Cloud
+                                    Solutions</a></li>
+                              <li><a href="backup-disaster-recovery.html"><i class="fa-solid fa-chevrons-right"></i>Backup
+                                    &amp; Disaster Recovery</a></li>
+                              <li><a href="it-infrastructure.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Infrastructure</a></li>
+                              <li><a href="next-gen-firewalls.html"><i class="fa-solid fa-chevrons-right"></i>Next-Gen
+                                    Firewalls</a></li>
+                              <li><a href="smart-meeting-rooms.html"><i class="fa-solid fa-chevrons-right"></i>Smart
+                                    Meeting Rooms</a></li>
+                              <li><a href="cctv-security.html"><i class="fa-solid fa-chevrons-right"></i>CCTV
+                                    Security</a></li>
+                              <li><a href="solutions.html"><i class="fa-solid fa-chevrons-right"></i>Business
+                                    Applications</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.3s">
+                        <h3 class="widget_title">Services</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="managed-it-services.html"><i class="fa-solid fa-chevrons-right"></i>Managed IT
+                                    Services</a></li>
+                              <li><a href="cybersecurity-services.html"><i class="fa-solid fa-chevrons-right"></i>Cybersecurity
+                                    Services</a></li>
+                              <li><a href="design-development.html"><i class="fa-solid fa-chevrons-right"></i>Design
+                                    &amp; Development</a></li>
+                              <li><a href="service-details.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Procurement</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
+                        <h3 class="widget_title">Company</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i>About Badee</a></li>
+                              <li><a href="index.html#industries"><i class="fa-solid fa-chevrons-right"></i>Industries</a>
+                              </li>
+                              <li><a href="index.html#projects"><i class="fa-solid fa-chevrons-right"></i>Projects</a>
+                              </li>
+                              <li><a href="index.html#technology-partners"><i
+                                       class="fa-solid fa-chevrons-right"></i>Partners</a></li>
+                              <li><a href="news.html"><i class="fa-solid fa-chevrons-right"></i>Case Studies</a></li>
+                              <li><a href="contact.html"><i
+                                       class="fa-solid fa-chevrons-right"></i>Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.9s">
+                        <h3 class="widget_title">Contact</h3>
+                        <ul class="footer-contact-list">
+                           <li><a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i> <span>Riyadh, Saudi Arabia</span></a></li>
+                           <li><a href="mailto:sales@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>sales@badee.com.sa</span></a></li>
+                           <li><a href="mailto:helpdesk@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>helpdesk@badee.com.sa</span></a></li>
+                           <li><a href="tel:+966553910099"><i class="fa-solid fa-phone"></i>
+                                 <span>0553910099</span></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright-wrap bg-theme">
+         <div class="container">
+            <div class="copyright-layout">
+               <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
+                  <p class="copyright">
+                     <i class="fal fa-copyright"></i> All Copyright <span class="copyright-year">2026</span> by <a href="index.html">Badee</a>
+                  </p>
+               </div>
+               <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                  <div class="link-wrapper">
+                     <a href="contact.html">Terms &amp; Condition </a>
+                     <a href="contact.html">Privacy Policy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

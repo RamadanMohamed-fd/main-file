@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ex-coders">
+    <meta name="description" content="Cloud solutions from Badee: Azure, AWS, Google Cloud and OCI planning, architecture, migration, security and ongoing cloud management.">
+    <!-- ======== Page title ============ -->
+    <title>Cloud Solutions - Badee IT Solutions</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+         <div class="spinner">
+         </div>
+         <div class="txt-loading">
+            <span data-text-preloader="B" class="letters-loading">
+               B
+            </span>
+            <span data-text-preloader="A" class="letters-loading">
+               A
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+               D
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+               E
+            </span>
+         </div>
+         <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+         <div class="row">
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+               <div class="bg"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-lg-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Riyadh, Saudi Arabia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:sales@badee.com.sa"><span
+                                            class="mailto:sales@badee.com.sa">sales@badee.com.sa</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+966553910099">0553910099</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/badee-sa"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header>
+        <div id="header-sticky" class="header-3">
+            <div class="plane-shape">
+                <img src="assets/img/plane.png" alt="shape-img">
+            </div>
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img style="max-width: 70px;" src="assets/img/logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+
+                                            <li>
+                                                <a href="about.html">About</a>
+                                            </li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li><a href="solutions.html">Solutions</a></li>
+                                            <li class="has-dropdown">
+                                                <a href="news.html">
+                                                    Pages
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li class="has-dropdown">
+                                                        <a href="project.html">
+                                                            Projects
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="project.html">Project</a></li>
+                                                            <li><a href="project-carousel.html">Project Carousel</a>
+                                                            </li>
+                                                            <li><a href="project-details.html">Project Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-dropdown">
+                                                        <a href="team.html">
+                                                            Team
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <ul class="submenu">
+                                                            <li><a href="team.html">Our Team</a></li>
+                                                            <li><a href="team-carousel.html">Team Carousel</a></li>
+                                                            <li><a href="team-details.html">Team Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="faq.html">Faq's</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn bg-white">
+                                    <span>
+                                        get A Quote
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-lg-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Hero Section Start >>-->
+    <section class="alna-hero fix">
+        <div class="alna-container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="alna-label wow fadeInUp" data-wow-delay=".1s">CLOUD SOLUTIONS</span>
+                    <h1 class="wow fadeInUp" data-wow-delay=".2s">Build, Modernize and Manage Your Business in the Cloud</h1>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".3s">Cloud technology gives businesses the flexibility to run applications, store data, scale infrastructure and adopt new technologies without being limited by traditional IT environments.</p>
+                    <p class="hero-intro wow fadeInUp" data-wow-delay=".4s">Badee Solutions helps organizations plan, design, migrate and manage cloud environments that are aligned with their business requirements, workloads, security needs and growth objectives.</p>
+                </div>
+                <div class="hero-form">
+                    <div class="alna-form-wrap wow fadeInUp" data-wow-delay=".4s">
+                        <img class="doodle" src="assets/img/icon/arrowDoodle.svg" alt="">
+                        <div class="alna-form-card">
+                            <h4>Interested?</h4>
+                            <p>Fill in this form to let us get back to you ASAP!</p>
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="Full Name">
+                                <input type="email" name="email" placeholder="Business Email">
+                                <div class="phone-field">
+                                    <span class="flag"><img src="assets/img/flag.png" alt=""><i class="fas fa-caret-down"></i></span>
+                                    <input type="text" name="phone" placeholder="Mobile Number">
+                                </div>
+                                <input type="text" name="company" placeholder="Company Name">
+                                <input type="text" name="message" placeholder="More details about your requirements">
+                                <button type="submit">Talk to a Cloud Expert</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section first fix" id="cloud-what">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD COMPUTING</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">The Cloud, Built Around Your Business</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Cloud computing provides on-demand access to computing resources such as servers, storage, databases, networking, applications and other technology services.</p>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Instead of building every capability around physical infrastructure, organizations can use cloud environments to deploy workloads, scale resources and access technology according to their requirements.</p>
+            </div>
+            <div class="alna-grid cols-2">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Broad Workload Support</h4>
+                    <p>Cloud platforms support a wide range of use cases, including applications, databases, storage, analytics, backup, disaster recovery and development environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Resources On Demand</h4>
+                    <p>Deploy workloads and scale compute, storage and networking resources according to your actual business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cloud-platforms">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD PLATFORMS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">The Right Cloud Platform for the Right Workload</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">We work across leading cloud platforms and can help you select the environment that best fits your applications, infrastructure, data and business requirements.</p>
+            </div>
+            <div class="alna-grid cols-2">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Microsoft Azure</h4>
+                    <p>Cloud services for applications, infrastructure, data, AI, networking and enterprise workloads. Azure supports highly available and scalable applications for modern business environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Amazon Web Services</h4>
+                    <p>A broad cloud platform covering compute, storage, databases, networking, security, analytics, application services and more, supporting workloads from applications and infrastructure to analytics, backup, disaster recovery and modernization.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Google Cloud</h4>
+                    <p>Cloud infrastructure and platform services for applications, data, analytics, AI and modern workloads.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Oracle Cloud Infrastructure</h4>
+                    <p>Cloud infrastructure for enterprise workloads, databases, applications and demanding business environments. Oracle currently operates OCI regions in both Riyadh and Jeddah, providing Saudi-based cloud-region options for applicable workloads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cloud-capabilities">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD CAPABILITIES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">More Than Cloud Hosting</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Cloud is not simply moving a server to a virtual machine. We help businesses use cloud technologies across infrastructure, applications, data, security and business continuity.</p>
+            </div>
+            <div class="alna-grid cols-4">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Infrastructure</h4>
+                    <p>Virtual machines, compute resources, storage, networking and core infrastructure for business workloads.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Applications</h4>
+                    <p>Deploy and support business applications and modern workloads in scalable cloud environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Storage</h4>
+                    <p>Secure and scalable storage for business data, applications, backups and archives.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Databases</h4>
+                    <p>Cloud database environments designed around application requirements, performance and scalability.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Networking</h4>
+                    <p>Connect users, offices, applications and cloud environments through secure network architectures.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Security</h4>
+                    <p>Apply identity, access, network and security controls to protect cloud resources and workloads.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Backup &amp; Disaster Recovery</h4>
+                    <p>Use cloud environments to support backup, recovery and business continuity strategies.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Hybrid &amp; Multi-Cloud</h4>
+                    <p>Connect and manage workloads across on-premises infrastructure and multiple cloud platforms where business requirements call for it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cloud-services">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">PROFESSIONAL SERVICES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">We Don't Just Move You to the Cloud. We Help You Do It Right.</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Moving workloads to the cloud requires more than creating virtual machines. Badee can support the planning, architecture, migration, implementation and optimization required to build a cloud environment around your business.</p>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Assessment</h4>
+                    <p>Assess your current infrastructure, applications, workloads and requirements to determine where cloud can provide practical business value.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Strategy &amp; Planning</h4>
+                    <p>Define the right cloud approach, platform, architecture and migration roadmap based on your business and technical requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Architecture &amp; Design</h4>
+                    <p>Design cloud environments covering compute, storage, networking, security, identity and workload requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Migration</h4>
+                    <p>Plan and execute the migration of servers, applications, databases, data and other workloads into the selected cloud environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Deployment</h4>
+                    <p>Provision and configure cloud infrastructure and services according to the approved architecture and requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Modernization</h4>
+                    <p>Modernize existing workloads and infrastructure to take advantage of cloud-native capabilities where appropriate.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Security &amp; Governance</h4>
+                    <p>Implement appropriate access, identity, network, security and governance controls for your cloud environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Optimization</h4>
+                    <p>Review cloud environments and identify opportunities to improve performance, resource utilization and operational efficiency.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Cloud Management</h4>
+                    <p>Provide ongoing administration, monitoring and support for cloud environments as part of an appropriate managed service engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cloud-migration">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD MIGRATION</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Move to the Cloud With Confidence</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Whether you are moving from physical servers, on-premises infrastructure, another hosting environment or an existing cloud platform, Badee can help plan and execute the migration.</p>
+            </div>
+            <div class="alna-steps">
+                <div class="step wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Assess</h4>
+                    <p>Review the existing environment, workloads, dependencies and requirements.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Plan</h4>
+                    <p>Define the target architecture, migration approach, timeline and required resources.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Migrate</h4>
+                    <p>Move workloads, applications and data into the target cloud environment.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Validate</h4>
+                    <p>Test connectivity, applications, performance, security and business functionality.</p>
+                </div>
+                <div class="step wow fadeInUp" data-wow-delay=".5s">
+                    <span class="num">05</span>
+                    <h4>Optimize</h4>
+                    <p>Fine-tune the environment after migration and establish the appropriate operational model.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cloud-hybrid">
+        <div class="alna-container">
+            <div class="alna-row reverse">
+                <div class="alna-col wow fadeInUp" data-wow-delay=".2s">
+                    <span class="alna-label with-rule">HYBRID &amp; MULTI-CLOUD</span>
+                    <h3>Connect the Cloud With the Rest of Your IT Environment</h3>
+                    <p>Not every workload needs to live in the same place. We can help businesses design environments that connect cloud platforms with existing infrastructure and, where appropriate, multiple cloud providers.</p>
+                    <div class="alna-item">
+                        <h4>Hybrid Cloud</h4>
+                        <p>Connect on-premises infrastructure with cloud resources.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Multi-Cloud</h4>
+                        <p>Use multiple cloud platforms where different workloads or business requirements justify it.</p>
+                    </div>
+                    <div class="alna-item">
+                        <h4>Cloud-to-Cloud</h4>
+                        <p>Connect and integrate workloads, applications and data across cloud environments.</p>
+                    </div>
+                </div>
+                <div class="alna-col alna-img wow fadeInUp" data-wow-delay=".4s">
+                    <img src="assets/img/contact2.png" alt="Badee technology illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cloud-needs">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">BUILT FOR YOUR BUSINESS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Cloud Solutions for Every Stage of Business</h2>
+            </div>
+            <div class="alna-grid cols-3">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>SMB</h4>
+                    <p>Move beyond traditional infrastructure with scalable cloud services that fit your current business requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Growing Business</h4>
+                    <p>Build a flexible environment that can scale with users, applications, locations and workloads.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="alna-badge sm"><img src="assets/img/icon/boltBadge.svg" alt="icon"></div>
+                    <h4>Enterprise</h4>
+                    <p>Design and manage more complex cloud environments across infrastructure, applications, security, data and business continuity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cloud-benefits">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD BENEFITS</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Why Businesses Move to the Cloud</h2>
+            </div>
+            <div class="alna-grid cols-3 numbered">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Scalability</h4>
+                    <p>Scale resources as business requirements change without relying entirely on fixed physical infrastructure.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Flexibility</h4>
+                    <p>Deploy technology resources according to workload and business requirements.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Business Continuity</h4>
+                    <p>Use cloud capabilities to support backup, recovery and resilient business operations.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Modernization</h4>
+                    <p>Adopt modern infrastructure, application and data capabilities without rebuilding everything from the ground up.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">05</span>
+                    <h4>Accessibility</h4>
+                    <p>Enable authorized users and applications to access cloud resources from different locations and environments.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">06</span>
+                    <h4>Innovation</h4>
+                    <p>Create a foundation for modern applications, analytics, automation and AI workloads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cloud-why">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">WHY BADEE</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Cloud Technology With a Business-First Approach</h2>
+            </div>
+            <div class="alna-grid cols-2 numbered">
+                <div class="alna-item wow fadeInUp" data-wow-delay=".1s">
+                    <span class="num">01</span>
+                    <h4>Platform-Agnostic Thinking</h4>
+                    <p>We can evaluate different cloud platforms rather than forcing every workload into the same environment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".2s">
+                    <span class="num">02</span>
+                    <h4>Infrastructure Understanding</h4>
+                    <p>Our cloud capabilities connect with our broader IT infrastructure, networking, security and backup expertise.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".3s">
+                    <span class="num">03</span>
+                    <h4>Migration &amp; Implementation</h4>
+                    <p>We can support the journey from assessment and design through migration and deployment.</p>
+                </div>
+                <div class="alna-item wow fadeInUp" data-wow-delay=".4s">
+                    <span class="num">04</span>
+                    <h4>Ongoing Support</h4>
+                    <p>Cloud environments can be supported and managed after implementation according to your operational requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section tight alna-grey fix" id="cloud-managed">
+        <div class="alna-container">
+            <div class="alna-bridge wow fadeInUp" data-wow-delay=".2s">
+                <div class="txt">
+                    <span class="alna-label with-rule">NEED ONGOING MANAGEMENT?</span>
+                    <h3>Let Badee Manage Your Cloud Environment</h3>
+                    <p>Your cloud environment still needs monitoring, administration, security and optimization after deployment. Badee can provide ongoing cloud management and support as part of a managed service engagement.</p>
+                </div>
+                <a href="managed-it-services.html" class="alna-view-all">Explore Managed IT Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section fix" id="cloud-faq">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD FAQ</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
+            </div>
+            <div class="alna-faq">
+                <div class="accordion" id="acccloud">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cloudfaq1" aria-expanded="false" aria-controls="cloudfaq1">
+                                Which cloud platforms does Badee support?
+                            </button>
+                        </h5>
+                        <div id="cloudfaq1" class="accordion-collapse collapse" data-bs-parent="#acccloud">
+                            <div class="accordion-body">
+                                Our cloud solutions can include Microsoft Azure, Amazon Web Services, Google Cloud and Oracle Cloud Infrastructure, depending on the workload and business requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cloudfaq2" aria-expanded="false" aria-controls="cloudfaq2">
+                                Do we have to move everything to the cloud?
+                            </button>
+                        </h5>
+                        <div id="cloudfaq2" class="accordion-collapse collapse" data-bs-parent="#acccloud">
+                            <div class="accordion-body">
+                                No. Cloud adoption should be based on your business and technical requirements. Some workloads may remain on-premises while others move to cloud or operate in a hybrid environment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".4s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cloudfaq3" aria-expanded="false" aria-controls="cloudfaq3">
+                                Can Badee migrate our existing servers to the cloud?
+                            </button>
+                        </h5>
+                        <div id="cloudfaq3" class="accordion-collapse collapse" data-bs-parent="#acccloud">
+                            <div class="accordion-body">
+                                Yes. Cloud migration can include assessment, planning, architecture, workload migration, testing and post-migration optimization.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".5s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cloudfaq4" aria-expanded="false" aria-controls="cloudfaq4">
+                                Can you manage our cloud environment after migration?
+                            </button>
+                        </h5>
+                        <div id="cloudfaq4" class="accordion-collapse collapse" data-bs-parent="#acccloud">
+                            <div class="accordion-body">
+                                Yes. Ongoing cloud administration, monitoring, support and optimization can be provided based on the required service model.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cloudfaq5" aria-expanded="false" aria-controls="cloudfaq5">
+                                Can we use more than one cloud provider?
+                            </button>
+                        </h5>
+                        <div id="cloudfaq5" class="accordion-collapse collapse" data-bs-parent="#acccloud">
+                            <div class="accordion-body">
+                                Yes. Where there is a clear business or technical reason, Badee can help design hybrid or multi-cloud environments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cloudfaq6" aria-expanded="false" aria-controls="cloudfaq6">
+                                Can cloud be used for backup and disaster recovery?
+                            </button>
+                        </h5>
+                        <div id="cloudfaq6" class="accordion-collapse collapse" data-bs-parent="#acccloud">
+                            <div class="accordion-body">
+                                Yes. Cloud infrastructure and services can form part of backup, recovery and disaster recovery strategies. The appropriate architecture depends on the workload and recovery requirements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alna-section alna-grey fix" id="cloud-resources">
+        <div class="alna-container">
+            <div class="alna-section-head">
+                <span class="alna-label text-center wow fadeInUp" data-wow-delay=".1s">CLOUD RESOURCES</span>
+                <h2 class="alna-h2 wow fadeInUp" data-wow-delay=".2s">Explore Cloud Platforms</h2>
+                <p class="wow fadeInUp" data-wow-delay=".3s">Learn more about the cloud platforms supported within our solutions portfolio.</p>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay=".3s">
+                <div class="alna-taggroup">
+                    <div class="alna-tags">
+                        <span>Microsoft Azure</span>
+                        <span>Amazon Web Services</span>
+                        <span>Google Cloud</span>
+                        <span>Oracle Cloud Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Final CTA >>-->
+    <section class="alna-cta-section" id="cloud-cta">
+        <div class="alna-container">
+            <div class="alna-cta wow fadeInUp" data-wow-delay=".2s">
+                <div class="cta-text">
+                    <span class="cta-eyebrow">READY FOR THE CLOUD?</span>
+                    <h2>Let's Build Your Cloud Strategy</h2>
+                    <p>Whether you are planning your first cloud deployment, migrating existing workloads or looking for ongoing cloud management, Badee can help you define the right next step.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn">Talk to a Cloud Expert</a>
+                    <a href="contact.html" class="btn ghost">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<< Footer Section Start >>-->
+    <footer class="footer-area">
+      <div class="widget-area style1  pt-100 pb-80">
+         <div class="container">
+            <div class="footer-layout style1">
+               <div class="row">
+                  <div class="col-xl-4 col-md-6 col-12">
+                     <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
+                        <div class="gt-widget-about">
+                           <div class="about-logo">
+                              <a href="index.html"><img src="assets/img/footer-logo.svg" alt="Badee IT Solutions"></a>
+                           </div>
+                           <p style="max-width: 250px; " class="about-text">Technology solutions and services that help businesses build,
+                              secure and manage their IT environment.
+                           </p>
+                           <p class="about-text fw-semibold">Just Badee It.</p>
+                           <div class="gt-social style2">
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://x.com/Badeeksa"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                              <a href="https://www.instagram.com/Badee_ksa"><i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
+                        <h3 class="widget_title">Solutions</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="microsoft-365.html"><i class="fa-solid fa-chevrons-right"></i>Microsoft
+                                    365</a></li>
+                              <li><a href="cloud-solutions.html"><i class="fa-solid fa-chevrons-right"></i>Cloud
+                                    Solutions</a></li>
+                              <li><a href="backup-disaster-recovery.html"><i class="fa-solid fa-chevrons-right"></i>Backup
+                                    &amp; Disaster Recovery</a></li>
+                              <li><a href="it-infrastructure.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Infrastructure</a></li>
+                              <li><a href="next-gen-firewalls.html"><i class="fa-solid fa-chevrons-right"></i>Next-Gen
+                                    Firewalls</a></li>
+                              <li><a href="smart-meeting-rooms.html"><i class="fa-solid fa-chevrons-right"></i>Smart
+                                    Meeting Rooms</a></li>
+                              <li><a href="cctv-security.html"><i class="fa-solid fa-chevrons-right"></i>CCTV
+                                    Security</a></li>
+                              <li><a href="solutions.html"><i class="fa-solid fa-chevrons-right"></i>Business
+                                    Applications</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.3s">
+                        <h3 class="widget_title">Services</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="managed-it-services.html"><i class="fa-solid fa-chevrons-right"></i>Managed IT
+                                    Services</a></li>
+                              <li><a href="cybersecurity-services.html"><i class="fa-solid fa-chevrons-right"></i>Cybersecurity
+                                    Services</a></li>
+                              <li><a href="design-development.html"><i class="fa-solid fa-chevrons-right"></i>Design
+                                    &amp; Development</a></li>
+                              <li><a href="service-details.html"><i class="fa-solid fa-chevrons-right"></i>IT
+                                    Procurement</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
+                        <h3 class="widget_title">Company</h3>
+                        <div class="menu-all-pages-container">
+                           <ul class="menu">
+                              <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i>About Badee</a></li>
+                              <li><a href="index.html#industries"><i class="fa-solid fa-chevrons-right"></i>Industries</a>
+                              </li>
+                              <li><a href="index.html#projects"><i class="fa-solid fa-chevrons-right"></i>Projects</a>
+                              </li>
+                              <li><a href="index.html#technology-partners"><i
+                                       class="fa-solid fa-chevrons-right"></i>Partners</a></li>
+                              <li><a href="news.html"><i class="fa-solid fa-chevrons-right"></i>Case Studies</a></li>
+                              <li><a href="contact.html"><i
+                                       class="fa-solid fa-chevrons-right"></i>Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-12">
+                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.9s">
+                        <h3 class="widget_title">Contact</h3>
+                        <ul class="footer-contact-list">
+                           <li><a href="https://maps.google.com/?q=Riyadh,Saudi+Arabia" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i> <span>Riyadh, Saudi Arabia</span></a></li>
+                           <li><a href="mailto:sales@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>sales@badee.com.sa</span></a></li>
+                           <li><a href="mailto:helpdesk@badee.com.sa"><i class="fa-solid fa-envelope"></i>
+                                 <span>helpdesk@badee.com.sa</span></a></li>
+                           <li><a href="tel:+966553910099"><i class="fa-solid fa-phone"></i>
+                                 <span>0553910099</span></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright-wrap bg-theme">
+         <div class="container">
+            <div class="copyright-layout">
+               <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
+                  <p class="copyright">
+                     <i class="fal fa-copyright"></i> All Copyright <span class="copyright-year">2026</span> by <a href="index.html">Badee</a>
+                  </p>
+               </div>
+               <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                  <div class="link-wrapper">
+                     <a href="contact.html">Terms &amp; Condition </a>
+                     <a href="contact.html">Privacy Policy</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
